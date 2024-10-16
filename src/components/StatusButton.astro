@@ -1,0 +1,47 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+
+const status_title: { [key: string]: string } = {
+  lc: "Preocupación menor",
+  nt: "Casi amenazada",
+  vu: "Vulnerable",
+  en: "Amenazada",
+  cr: "Seriamente amenazada",
+  ew: "Extinta en libertad",
+  ex: "Extinta",
+};
+
+const color: { [key: string]: string } = {
+  ex: "#000000",
+  ew: "#000000",
+  cr: "#cd3030",
+  en: "#cd6630",
+  vu: "#cd9a00",
+  nt: "#006666",
+  lc: "#006666",
+};
+
+const status_font_color: { [key: string]: string } = {
+  lc: "#ffffff",
+  nt: "#9acd9a",
+  vu: "#ffffcd",
+  en: "#ffcd9a",
+  cr: "#ffcdcd",
+  ew: "#ffffff",
+  ex: "#cd3030",
+};
+
+const fontColor = status_font_color[title] || "black";
+const backgroundColor = color[title] || "black";
+---
+
+<div
+  class= "rounded-xl shadow dark:bg-gray-800 dark:border-gray-700 w-48 font-medium text-center mt-1"
+	style=`background-color: ${backgroundColor}; color: ${fontColor}`
+>
+  <p class=`text-font_${title}`>{status_title[title]}</p>
+</div>

@@ -1,0 +1,296 @@
+---
+import Menu from "../components/Menu.astro";
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Petirrojo">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img src="./images/Home/urogallo.png" alt="Petirrojo" />
+    </div>
+
+    <!-- TITLE -->
+
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Petirrojo
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">
+      Erithacus rubecula
+    </h2>
+    <div class="px-4 flex justify-between mt-4">
+      <!-- TAXONOMY -->
+
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Passeriformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Muscicapidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Erithacus</p>
+        </div>
+      </div>
+
+      <!-- CONSERVATION STATUS -->
+
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">
+          Estado de conservación
+        </h3>
+        <StatusButton title="lc"/>
+      </div>
+    </div>
+
+    <!-- FIRST DESCRIPTION -->
+
+    <p class="px-3 mt-8 text-left">
+      El petirrojo europeo (Erithacus rubecula) es una especie de ave
+      paseriforme de la familia Muscicapidae. Está distribuido por toda
+      Europa, principalmente en la región meridional y occidental del
+      continente, donde habita todo el año, y es migrante parcial en el norte de
+      Europa y noroeste de África.
+    </p>
+    <p class="px-3 mt-8 text-left">
+        El petirrojo es un pájaro sociable, atrevido y curioso que acostumbra a salir del bosque y plantarse a mitad de un camino para ver quién llega a su territorio, emitiendo su característica voz de alerta: un chip-chip metálico y seco. Su canto es un gorjeo musical, muy melódico, parecido al del ruiseñor.
+    </p>
+    <div
+      id="accordion-flush"
+      data-accordion="collapse"
+      data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+      data-inactive-classes="text-gray-500 dark:text-gray-400"
+      class="px-3 text-left mb-4"
+    >
+      <!-- ACCORDION 1 -->
+
+      <h2 id="accordion-flush-heading-1">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-1"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-4"
+        >
+          <span>Descripción</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-1"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-1"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El ave adulta mide entre 12,5 y 14 cm de largo, pesa de 16 a 22 g y tiene una envergadura de 20 a 22 cm. Los plumajes del macho y de la hembra son semejantes: el pecho y la cara naranja, bordeado por un gris azulado en los lados del cuello y del pecho. Las partes superiores son de color marrón y el vientre blanquecino, mientras que las patas y los pies son de color marrón. El pico y los ojos tienen un color negro. Los juveniles carecen de color anaranjado y son marcadamente moteados de pardo oscuro y ocráceo, con parches de color naranja apareciendo gradualmente en el pecho y la cara.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 2 -->
+
+      <h2 id="accordion-flush-heading-2">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-2"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-2"
+        >
+          <span>Taxonomía</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-2"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-2"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El petirrojo europeo fue originalmente descrito con el nombre de Motacilla rubecula por Carlos Linneo en su obra del siglo XVIII Systema naturæ. Su epíteto específico rubecula es un diminutivo derivado de la palabra latina ruber ('rojo'). El género Erithacus fue creado por el naturalista francés Georges Cuvier en 1800, dando al ave su actual nombre binomial de E. rubecula.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El petirrojo europeo pertenece a un grupo de aves principalmente insectívoras que previamente fueron asignadas a los tordos o papamoscas, dependiendo de cómo estos grupos fueron percibidos taxonómicamente. Finalmente, se volvió a analizar el conjunto de los papamoscas-tordos, y el género Erithacus fue asignado a la tribu Saxicolini, un grupo de verdaderos papamoscas-tordos que también incluye el ruiseñor común y los Saxicolinae del Viejo Mundo.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Dos especies del Paleártico oriental, E. akahige y E. komadori —este último con una distribución insular limitada—, se colocan generalmente en el género Erithacus. Sin embargo, datos biogeográficos y las secuencias de ADNmt citocromo b indican que estas podrían mejor ser clasificadas con algunos "ruiseñores" del Extremo Oriente, dejando solo las especies europeas en Erithacus.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 3 -->
+
+      <h2 id="accordion-flush-heading-3">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-3"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-3"
+        >
+          <span>Comportamiento</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-3"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-3"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Es un ave diurna, aunque ocasionalmente caza insectos en las noches de luna, o cerca de luz artificial. Se alimenta principalmente de invertebrados terrestres, como arañas, lombrices e insectos. En otoño e invierno, complementa su dieta habitual de invertebrados con bayas y frutas. También come las mezclas de semillas colocadas en alimentadores de pájaros.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Está relativamente acostumbrado a la presencia de seres humanos y suele acercarse cuando alguien está removiendo la tierra, con la esperanza de atrapar lombrices y otras presas que puedan aparecer. En efecto, en las islas británicas el petirrojo se considera el amigo del jardinero y no es perjudicado por varias razones folclóricas. En la Europa continental, donde los petirrojos fueron cazados al igual que muchas otras aves pequeñas, se volvieron más cautelosos. En busca de algún alimento que pudiera ser traído a la superficie, el petirrojo se acerca también a grandes animales silvestres, como el jabalí y otros animales que remueven el suelo.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Los machos tienen un comportamiento territorial bastante agresivo. Atacan a otros machos que se apartan en sus territorios, y también han sido observados atacando a otras aves pequeñas sin provocación aparente. Estos ataques pueden resultar en incidentes mortales, y en ciertas áreas puede representar hasta un 10 % de las muertes de los petirrojos adultos. Esta especie está infestada por la pulga Dasypsyllus gallinulae. y el acantocéfalo Apororhynchus silesiacus.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Tiene un canto estriado y trinado durante la época de cría, cuando a menudo canta en la noche, a veces hasta muy tarde, lo que puede llevar a confundirlo con el ruiseñor (Luscinia megarhynchos). El canto nocturno en las zonas urbanas se produce en lugares que suelen ser ruidosos durante el día, lo que sugiere que canta por la noche porque la tranquilidad permite que su mensaje se propague con mayor claridad. Durante el invierno, cuando los machos y las hembras tienen territorios separados, los cantos de ambos sexos suenan más lastimeros que durante el verano. Durante el invierno la hembra sale del territorio de anidación y se desplaza a un área cercana, más adecuada para buscar alimentos. El macho permanece en el territorio de anidación durante todo el año.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 4 -->
+
+      <h2 id="accordion-flush-heading-4">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-4"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-4"
+        >
+          <span>Distribución y hábitat</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-4"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-4"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Su área de distribución abarca Europa, el noroeste de Asia y el norte de África, y se extiende hasta el oeste de Siberia en el oriente, en el sureste hasta la cordillera del Cáucaso, y en el sur hasta Argelia. Incluye también las islas británicas y en la región macaronésica. No se encuentra en Islandia.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Los petirrojos de Escandinavia y Rusia migran hacia Europa occidental para escapar de los inviernos más fríos en su territorio de anidación. Estas aves migratorias se distinguen por el tono gris de la parte superior de su cuerpo y el color naranja más apagado del pecho.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            En el norte de Europa su hábitat preferido es el bosque de pícea, mientras que en las islas británicas tiene una preferencia por los parques y jardines.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            A finales del siglo XIX hubo algunos intentos de introducir esta especie en Australia y Nueva Zelanda, pero no tuvieron éxito. Las aves fueron liberadas alrededor de Melbourne, Auckland, Christchurch, Wellington y Dunedin por varias sociedades de aclimatación, pero no lograron establecerse. Hubo un resultado similar en América del Norte donde las aves introducidas no lograron establecerse tras ser liberadas en Long Island, Nueva York en 1852, Oregón en 1889-92, y la península de Saanich en Columbia Británica en 1908-10.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGES -->
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/95/Rouge_gorge_familier_-_crop_%28WB_correction%29.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Erithacus-rubecula-melophilus_Dublin-Ireland.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Erithacus_rubecula_-Canary_Islands%2C_Spain_-adult_and_juvenile-8.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Petirrojo_europeo_%28Erithacus_rubecula%29%2C_Tierpark_Hellabrunn%2C_M%C3%BAnich%2C_Alemania%2C_2012-06-17%2C_DD_02.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <a href="/" class="flex justify-center mt-4">
+      <button
+        type="button"
+        class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+      >
+        ¿Quires ver las demás mesas?
+      </button>
+    </a>
+  </main>
+</Layout>

@@ -1,0 +1,376 @@
+---
+import Menu from "../components/Menu.astro";
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Perdiz nival">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img src="./images/Home/urogallo.png" alt="Perdiz nival" />
+    </div>
+
+    <!-- TITLE -->
+
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Perdiz nival
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">Lagopus muta</h2>
+    <div class="px-4 flex justify-between mt-4">
+      <!-- TAXONOMY -->
+
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Galliformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Phasianidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Subfamilia:</p>
+          <p class="">Tetraoninae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Lagopus</p>
+        </div>
+      </div>
+
+      <!-- CONSERVATION STATUS -->
+
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">
+          Estado de conservación
+        </h3>
+        <StatusButton title="lc"/>
+      </div>
+    </div>
+
+    <!-- FIRST DESCRIPTION -->
+
+    <p class="px-3 mt-8 text-left">
+      La perdiz nival o lagópodo alpino (Lagopus muta) es una especie de ave
+      galliforme de la familia Phasianidae ampliamente extendida por las
+      regiones frías del Holártico, y que también habita en las partes altas de
+      las principales cadenas montañosas de Eurasia y Norteamérica, entre el
+      límite superior de los árboles y las nieves perpetuas, donde las
+      particularidades de cada zona a través del proceso de adaptación natural
+      de la especie han dado lugar a varias subespecies.
+    </p>
+    <p class="px-3 mt-8 text-left">
+      En el caso de España, encontramos en los Pirineos la variedad Lagopus muta
+      pirenaicus, de la que se mantiene una población que no presenta mayores
+      oscilaciones como resultado de las escasas amenazas a que se encuentra
+      expuesta. En efecto, son pocos los enemigos que la molestan y tampoco el
+      hombre ha alterado demasiado su la población de esta especie dadas las
+      dificultades que comporta la caza de la perdiz a gran altura.
+    </p>
+    <div
+      id="accordion-flush"
+      data-accordion="collapse"
+      data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+      data-inactive-classes="text-gray-500 dark:text-gray-400"
+      class="px-3 text-left mb-4"
+    >
+      <!-- ACCORDION 1 -->
+
+      <h2 id="accordion-flush-heading-1">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-1"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-4"
+        >
+          <span>Descripción</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-1"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-1"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            La perdiz nival mide entre 34 y 36 cm de largo, de los cuales 8 cm
+            corresponden a la cola, compuesta por 16 plumas timoneras, y tiene
+            una envergadura alar entre 54 y 60 cm. por lo que es ligeramente
+            menor que el lagópodo común, alrededor de un 10%. El cuerpo de la
+            perdiz nival se halla cubierto de un plumaje denso que proporciona a
+            su cuerpo la apariencia de un volumen del cual en realidad carece ya
+            que su peso alcanza escasamente los 400-500 gramos. Una
+            característica particular de la perdiz nival es la de poseer las
+            patas completamente recubiertas de plumas que descienden hasta la
+            porción distal de los dedos, dejando al descubierto solamente las
+            fuertes uñas que le permiten al animal excavar incluso en la nieve
+            más dura. Las huellas que dejan las patas de la perdiz nival
+            recuerdan las de una liebre pequeña. La cabeza de la perdiz nival es
+            redondeada, con el pico negro y corto, y suele presentar una pequeña
+            carúncula de color rojo situada sobre sus ojos pardos.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Con respecto al color de estas aves de montaña, es interesante
+            destacar que la naturaleza les ha dotado de una homocromía
+            estacional que les permite camuflarse en su hábitat cambiante. Así,
+            durante el verano, el plumaje presenta tonalidades marrones,
+            cenicientas y rojizas con estrías transversales negras sobre el
+            dorso. La parte inferior de las alas y el vientre permanecen
+            blancos. En cambio, en invierno el plumaje se convierte en una capa
+            totalmente blanca, con un trazo negro sobre los ojos, siendo posible
+            distinguir al macho de la hembra por ostentar una mancha negra
+            debajo de la garganta.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El paso del plumaje estival al invernal tiene lugar de un modo
+            gradual. En la primavera tiene una tonalidad que va del gris al
+            marrón oscuro, y para mediados de agosto, pasa al pardo grisáceo; en
+            octubre, al blanquecino con manchas marrones y en diciembre adquiere
+            su característico color blanco uniforme.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 2 -->
+
+      <h2 id="accordion-flush-heading-2">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-2"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-2"
+        >
+          <span>Taxonomía</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-2"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-2"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            La perdiz nival se clasifica en el género Lagopus, junto a los demás
+            lagopodos, perteneciente a la familia Phasianidae; la familia de los
+            faisanes, gallos, pavos, lagopodos, pedices y afines. Los fasiánidos
+            a su vez se clasifican en el orden Galliformes, junto a otras cuatro
+            familias de aves terrestres: Megapodiidae (talégalos), Cracidae
+            (chachalacas y pavas americanas), Numididae (pintadas) y
+            Odontophoridae (colines y corcovados). Dentro de la familia
+            Phasianidae, la perdiz nival se encuadra en la subfamilia
+            Tetraoninae, que incluye a los urogallos, lagopodos, grévoles,
+            gallos de las praderas y afines.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El lagopodo alpino fue descrito científicamente por el naturalista
+            sueco Lars Montin en 1781, con el nombre científico de Tetrao mutus.
+            Posteriormente fue trasladado al género Lagopus, creado en por el
+            zoólogo francés Mathurin Jacques Brisson en 1760.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Aunque se han descrito más de 30 subespecies de Lagopus muta, En la
+            actualidad se reconocen 23 subespecies.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 3 -->
+
+      <h2 id="accordion-flush-heading-3">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-3"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-3"
+        >
+          <span>Comportamiento</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-3"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-3"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            En los meses de verano, la perdiz nival se establece en el límite de
+            las nieves eternas que coronan las montañas en las que vive, en la
+            vertiente norte de las cimas más elevadas.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            En el invierno, suele localizarse en los lugares soleados, y,
+            solamente en condiciones excepcionales, abandona las alturas propias
+            de la especie.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Se trata de una especie gregaria que vive en pequeños grupos
+            compuestos de 4 o 6 ejemplares que durante los meses de invierno
+            pueden aumentar hasta 20-30 perdices.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            No se trata de una especie sedentaria sino que tiende a trasladarse
+            permanentemente por la montaña, actividad que está facilitada por su
+            condición de gran andadora.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Por la mañana, sale a la búsqueda del alimento y por las noches
+            duerme acurrucada bajo un saliente rocoso. En invierno, excava una
+            madriguera aprovechando el amparo que le ofrece la misma nieve. El
+            vuelo de estas perdices es rápido y muy diferente al de otras
+            perdices. No obstante, se trata de un vuelo de distancias cortas. La
+            perdiz nival nunca se lanza hacia los valles y, en caso de peligro,
+            prefiere adentrarse en los terrenos quebrados e inaccesibles, y así
+            solo pueden sorprenderla un reducido grupo de depredadores, como las
+            águilas reales.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 4 -->
+
+      <h2 id="accordion-flush-heading-4">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-4"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-4"
+        >
+          <span>Distribución</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-4"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-4"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El lagópodo nival es un ave sedentaria que habita en la tundra y las
+            laderas de las montañas rocosas de las regiones ártica y subártica
+            de Eurasia y Norteamérica (incluidas Groenlandia e Islandia).
+            También se extiende por cordilleras más meridionales como los Alpes,
+            los Pirineos, los montes de Escocia, los Balcanes, los Urales, el
+            Pammir, el macizo de Altái y los Alpes Japoneses. Durante la última
+            glaciación el área de distribución de la especie se extendía más al
+            sur ocupando la mayor parte de la Europa continental, Y al retirarse
+            los hielos las poblaciones de estas montañas se quedaron aisladas.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            También se distribuye por varias islas el círculo polar. La pequeña
+            población que viven en la Tierra de Francisco José del ártico ruso
+            sobrevive a la época de la noche polar invernal alimentándose de la
+            vegetación de los acantilados que ocupaban las aves marinas en
+            verano.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGES -->
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Lagopus_muta_-Iceland-8.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Fj%C3%A4llripa_Sommardr%C3%A4kt_Island.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Raichou_01.JPG"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="https://pbs.twimg.com/media/C0izewlXUAAyaod.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <a href="/" class="flex justify-center mt-4">
+      <button
+        type="button"
+        class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+      >
+        ¿Quires ver las demás mesas?
+      </button>
+    </a>
+  </main>
+</Layout>

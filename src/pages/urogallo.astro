@@ -1,0 +1,143 @@
+---
+import Menu from "../components/Menu.astro";
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Urogallo de las artemisas">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img src="./images/Home/urogallo.png" alt="Urogallo de las artemisas" />
+    </div>
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Urogallo de las artemisas
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">
+      Centrocercus urophasianus
+    </h2>
+    <div class="px-4 flex justify-between mt-4">
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Galliformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Phasianidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Centrocercus</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">Estado de conservación</h3>
+        <StatusButton title="lc"/>
+      </div>
+    </div>
+    <p class="px-3 mt-8 text-left">
+      El urogallo de las artemisas o gallo de salvia es una especie de ave
+      galliforme de la familia Phasianidae propia del oeste de Canadá y noroeste
+      de los Estados Unidos. No se conocen subespecies.
+    </p>
+    <div
+      id="accordion-flush"
+      data-accordion="collapse"
+      data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+      data-inactive-classes="text-gray-500 dark:text-gray-400"
+      class="px-3 text-left mb-4"
+    >
+      <h2 id="accordion-flush-heading-1">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-1"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-1"
+        >
+          <span>Historia natural</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-1"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-1"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Es un habitante de los extensos matorrales formados por artemisas,
+            que le ofrecen abrigo y con cuyas hojas se alimenta. Vive en las
+            llanuras en invierno y las estribaciones de las montañas en verano.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            En primavera, grupos de machos se exhiben ante las hembras formando
+            un abanico erizado con la cola, hinchando el cuello y llenando los
+            sacos aéreos de su pecho,(que sólo los tienen los machos, puesto que
+            atraen a las hembras, de menor tamaño) y emiten unos sonidos
+            profundos y burbujeantes. Las hembras escogen su pareja y anidan
+            solas.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Los urogallos de artemisas están desapareciendo del oeste de Estados
+            Unidos, aunque su población se estimaba en millones, a finales del
+            siglo xx quedaban unas 150.000 de estas aves, por lo que se ha
+            abierto un centro para su protección en Dubois, Idaho.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/37592521/1800"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Centrocercus_urophasianus_-USA_-male-8.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="https://idahocapitalsun.com/wp-content/uploads/2023/10/Male-grouse-in-flight-2048x1365-1-1024x683.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="https://as1.ftcdn.net/v2/jpg/04/20/88/42/1000_F_420884291_Xypgfw2Ey9yVEKFxy5dJ2MJKqocvmC49.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <a href="/" class="flex justify-center mt-4">
+      <button type="button" class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">
+        ¿Quires ver las demás mesas?
+      </button>
+    </a>
+  </main>
+</Layout>

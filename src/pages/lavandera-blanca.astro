@@ -1,0 +1,263 @@
+---
+import Menu from "../components/Menu.astro";
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Lavandera blanca">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img src="./images/Home/urogallo.png" alt="Lavandera blanca" />
+    </div>
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Lavandera blanca
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">Motacilla alba</h2>
+    <div class="px-4 flex justify-between mt-4">
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Passeriformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Motacillidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Motacilla</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">
+          Estado de conservación
+        </h3>
+        <StatusButton title="lc"/>
+      </div>
+    </div>
+    <p class="px-3 mt-8 text-left">
+      La lavandera blanca o aguzanieves (Motacilla alba), conocida popularmente
+      como pajarita de las nieves, pitita, pipita o pezpita, es una pequeña
+      especie de ave paseriforme de la familia Motacillidae. Se encuentra en
+      casi todos los hábitats. Su avistamiento se asocia a la llegada del tiempo
+      frío.
+    </p>
+    <div
+      id="accordion-flush"
+      data-accordion="collapse"
+      data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+      data-inactive-classes="text-gray-500 dark:text-gray-400"
+      class="px-3 text-left mb-4"
+    >
+      <h2 id="accordion-flush-heading-1">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-1"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-1"
+        >
+          <span>Características</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-1"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-1"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            La lavandera blanca es un ave pequeña y elegante, de 16 a 19 cm de
+            longitud, con su característica cola siempre en movimiento.
+          </p>
+        </div>
+      </div>
+
+      <h2 id="accordion-flush-heading-2">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-2"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-2"
+        >
+          <span>Distribución y hábitat</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-2"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-2"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Esta especie vive en muchas partes de Europa, de Asia, norte de
+            África. Algunas residen permanentemente en esos lugares, y otras
+            migran a África.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Es un ave insectívora de campo abierto. Prefiere áreas despejadas
+            para empollar, donde puede ver y seguir a sus presas. En zonas
+            urbanas se adapta a buscar alimento en el pavimento como son áreas
+            de estacionamiento.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Anida en grietas de paredes rocosas y similares naturales o en
+            estructuras humanas.
+          </p>
+        </div>
+      </div>
+
+      <h2 id="accordion-flush-heading-3">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-3"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-3"
+        >
+          <span>Reproducción</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-3"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-3"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            La hembra construye el nido prácticamente en cualquier lado. Pone cinco huevos grises moteados de un gris pardusco.
+          </p>
+        </div>
+      </div>
+
+      <h2 id="accordion-flush-heading-4">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-4"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-4"
+        >
+          <span>Estado de conservación</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-4"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-4"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Según BirdLife International, en 2004 había en Europa entre trece y veintiséis millones de parejas reproductoras, lo que equivale a entre treinta y nueve y setenta y ocho millones de individuos. Dado que Europa constituye entre el 5 y el 24% del área de distribución de la especie, una estimación muy preliminar del tamaño de la población mundial es de entre ciento sesenta y tres millones y mil quinientos sesenta millones de individuos, aunque se necesita una validación adicional de esta estimación. Una población estable y con una amplia distribución geográfica determina que en la Lista Roja de la UICN sea clasificado como de «preocupación menor».
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+        <div class="grid gap-4">
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/55/White-Wagtail.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/44586721/1800"
+                alt=""
+              />
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://live.staticflickr.com/976/42193816262_3371394e9f_b.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXybNlEcb5NmSRW2TRUffwtx_z7ofFXX0uf79BNnTohw&s"
+              alt=""
+            />
+          </div>
+        </div>
+    </div>
+    <a href="/" class="flex justify-center mt-4">
+      <button
+        type="button"
+        class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+      >
+        ¿Quires ver las demás mesas?
+      </button>
+    </a>
+  </main>
+</Layout>

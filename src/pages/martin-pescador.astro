@@ -1,0 +1,274 @@
+---
+import Menu from "../components/Menu.astro";
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Lavandera blanca">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img src="./images/Home/urogallo.png" alt="Lavandera blanca" />
+    </div>
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Martín pescador
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">Alcedo atthis</h2>
+    <div class="px-4 flex justify-between mt-4">
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Coraciiformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Suborden:</p>
+          <p class="">Alcedines</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Alcedinidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Alcedo</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">
+          Estado de conservación
+        </h3>
+        <StatusButton title="lc"/>
+      </div>
+    </div>
+    <p class="px-3 mt-8 text-left">
+        El martín pescador común o alción (Alcedo atthis) es una especie de ave coraciiforme de la familia Alcedinidae, que habita en lagos y ríos de Europa, África y Asia.
+    </p>
+    <div
+      id="accordion-flush"
+      data-accordion="collapse"
+      data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+      data-inactive-classes="text-gray-500 dark:text-gray-400"
+      class="px-3 text-left mb-4"
+    >
+      <h2 id="accordion-flush-heading-1">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-1"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-1"
+        >
+          <span>Descripción</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-1"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-1"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El dorso del cuerpo, cabeza y alas es azul-turquesa con destellos verdoso-metálicos. El vientre y un par de zonas bajo los ojos son de color naranja, mientras que las zonas de la garganta, orejas y orificios nasales son blancos. A pesar de estas generalidades, es complicado dar un patrón exacto del color de su plumaje, ya que este varía según la incidencia de la luz. En cualquier caso, es un ave inconfundible.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El pico es largo, constituyendo una parte nada despreciable de la longitud total del cuerpo (15,5-19 cm en total), de color negro con transición a naranja en la zona más cercana a la cabeza de la mandíbula inferior. La envergadura alar ronda los 25 cm y el peso medio los 35 gramos. Las patas son muy cortas y, al igual que los pies, son de color rojo vivo. El dimorfismo sexual en esta especie es poco acusado: en las hembras, la zona de color anaranjado de la mandíbula inferior es más amplia.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Sorprendentemente, a pesar de su espectacular plumaje, su mimetismo con el entorno es grande. El plumaje castaño del pecho hace que sea difícil de ver desde la otra orilla, y su espalda y alas azules se confunden con el agua del río si se le ve de espaldas. Se alimenta de peces que pesca con su pico.
+          </p>
+        </div>
+      </div>
+
+      <h2 id="accordion-flush-heading-2">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-2"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-2"
+        >
+          <span>Reproducción</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-2"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-2"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Pone de cinco a siete huevos esféricos, brillantes y blancos al final de una galería excavada en las márgenes del río, a poca altura sobre el nivel del agua. Macho y hembra colaboran en la construcción de la galería, unas veces desde cero y otras modificando una madriguera abandonada de avión zapador o de rata de agua. El nido puede alcanzar una profundidad de un metro, pero con frecuencia mide bastante menos.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Realizan dos puestas al año, reutilizando en muchas ocasiones el mismo nido, que limpiarán de restos de pescado e insectos antes de la segunda puesta. Aunque varían según las regiones, la primera suele ser en abril y la segunda en junio, aunque se conocen puestas en meses tan excepcionalmente tardíos como octubre.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Los huevos son pequeños, de unos 22,5x18,7 mm. Tanto el macho como la hembra se reparten las tareas de incubación, que suelen durar entre 19 y 22 días. Los pollos nacen desnudos de plumón, con una piel rosa azulada. A los 23 días ya están listos para salir del túnel, pero aún permanecerán dos o tres días más en un posadero cercano al nido hasta que se decidan a echar a volar.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            La tasa de mortalidad en los primeros días es muy alta. Ya sea porque son capturados por depredadores, o porque se ahogan en sus primeros intentos de pesca, no suelen sobrevivir más de dos pollos de cada puesta.
+          </p>
+        </div>
+      </div>
+
+      <h2 id="accordion-flush-heading-3">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-3"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-3"
+        >
+          <span>Distribución</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-3"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-3"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Vive a lo largo de los lagos y ríos de Europa, África y Asia. En la mayor parte de su área de distribución es una especie sedentaria, pero en las zonas boreales se ve obligado a emigrar hacia el sur en invierno. Se encuentra ausente en algunas áreas montañosas, donde le sustituyen los mirlos acuáticos.
+          </p>
+        </div>
+      </div>
+
+      <h2 id="accordion-flush-heading-4">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-4"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-4"
+        >
+          <span>Alimentación</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-4"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-4"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Su alimentación básica la componen los pequeños peces que divisa desde las ramas bajas de un árbol o un arbusto. Luego, se zambulle rápidamente con el pico por delante y los ojos cerrados, y captura su presa con una altísima tasa de éxito. Tras la captura, retorna a su puesto anterior, donde la traga de una pieza. En otras ocasiones maniobra velozmente sobre la superficie del agua, buscando un lugar más propicio para sumergirse. Todo esto sería imposible sin sus potentes músculos alares y de la base del cuello.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Ocasionalmente, si la zona de caza no dispone de posaderos adecuados, el martín se suspende en el aire al acecho, aleteando vigorosamente y manteniendo la cabeza quieta, de una manera similar a la utilizada por el cernícalo vulgar.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Aproximadamente el 65 % de su dieta se compone de pescado. La complementa con insectos acuáticos, pequeños crustáceos y renacuajos, a los que captura con la misma técnica. Es frecuente que emita un estridente sonido similar a un chiii o tiiit mientras caza.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Debido a su método de caza, el martín pescador común necesita de la presencia de densa vegetación fluvial junto al agua, además de que ésta sea pura y cristalina, por lo que tolera bastante mal la contaminación del agua. Esta, además de las olas de frío ocasionales que congelan la superficie del río impidiéndole cazar, son las principales causas de mortandad en esta especie.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+        <div class="grid gap-4">
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Common_Kingfisher_Alcedo_atthis.jpg/250px-Common_Kingfisher_Alcedo_atthis.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+                <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSv5PoLssnjGcCP4UGLcf4CO-KBfkxw957h-NoOW7WoJA5KoVZpwK226sMkY_sGty6j5B9lUn1VjawnM1vp0YhsILYgLfaJJXbFFZ46tXda6e0XM7_ffevPNscwZQPl4zDGb3lizTtuZE/s1600/Martin_pescador_PM-769452.jpg"
+                alt=""
+                />
+            </div>
+        </div>
+        <div class="grid gap-4">
+            <div>
+                <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://hidesdeltietar.com/wp-content/uploads/2023/02/FER7397-NEF_DxO_DeepPRIME-copia.jpg"
+                alt=""
+                />
+            </div>
+            <div>
+              <img
+                class="h-auto max-w-full rounded-lg"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Alcedo_atthis_-_Riserve_naturali_e_aree_contigue_della_fascia_fluviale_del_Po.jpg/220px-Alcedo_atthis_-_Riserve_naturali_e_aree_contigue_della_fascia_fluviale_del_Po.jpg"
+                alt=""
+              />
+            </div>
+        </div>
+    </div>
+    <a href="/" class="flex justify-center mt-4">
+      <button
+        type="button"
+        class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+      >
+        ¿Quires ver las demás mesas?
+      </button>
+    </a>
+  </main>
+</Layout>

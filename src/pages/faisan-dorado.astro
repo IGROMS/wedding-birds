@@ -1,0 +1,268 @@
+---
+import Menu from "../components/Menu.astro";
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Faisán dorado">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img src="./images/Home/urogallo.png" alt="Faisán dorado" />
+    </div>
+
+    <!-- TITLE -->
+
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Faisán dorado
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">
+      Chrysolophus pictus
+    </h2>
+    <div class="px-4 flex justify-between mt-4">
+      <!-- TAXONOMY -->
+
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Galliformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Phasianidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Chrysolophus</p>
+        </div>
+      </div>
+
+      <!-- CONSERVATION STATUS -->
+
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">
+          Estado de conservación
+        </h3>
+        <StatusButton title="lc" />
+      </div>
+    </div>
+
+    <!-- FIRST DESCRIPTION -->
+
+    <p class="px-3 mt-8 text-left">
+      El faisán dorado (Chrysolophus pictus) es una especie de ave galliforme de
+      la familia de los faisánidos originaria de China, Birmania y algunas otras
+      zonas de Asia. Actualmente, no hay subespecies reconocidas.
+    </p>
+    <p class="px-3 mt-8 text-left">
+      El nombre del género de esta especie proviene del griego chryseos,
+      "dorado", y lophos, "cresta", es decir, "cresta dorada", y el epíteto
+      específico pictus viene del latín y significa "ilustrado".
+    </p>
+
+    <div
+      id="accordion-flush"
+      data-accordion="collapse"
+      data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+      data-inactive-classes="text-gray-500 dark:text-gray-400"
+      class="px-3 text-left mb-4"
+    >
+      <!-- ACCORDION 1 -->
+
+      <h2 id="accordion-flush-heading-1">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-1"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-4"
+        >
+          <span>Características</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-1"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-1"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El faisán dorado, originario de los bosques montañosos del oeste de
+            China, ha establecido poblaciones salvajes en una amplia gama de
+            países, desde el Reino Unido hasta Australia y Nueva Zelanda. Los
+            machos adultos destacan por su tamaño, de 90 a 105 cm de longitud, y
+            su distintivo plumaje rojo brillante con cresta y rabadilla doradas.
+            Por otro lado, las hembras tienen un plumaje más discreto, de tonos
+            marrones, y son proporcionalmente más pequeñas. Ambos sexos
+            comparten patas y pico de color amarillo. Se alimentan
+            principalmente en el suelo de granos, hojas e invertebrados, y
+            aunque pueden volar torpemente, prefieren correr y esconderse. En
+            cautiverio, se han desarrollado diversas mutaciones de plumaje, pero
+            en su estado salvaje son reconocidos como "rojo-dorados".
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            En cuanto a su comportamiento reproductivo, las hembras ponen de 8 a
+            12 huevos que incuban durante aproximadamente 22 a 23 días. Durante
+            la época de cría, los machos emiten una llamada metálica
+            característica. Aunque comúnmente se encuentran en zoológicos y
+            aviarios, muchas veces son híbridos con el faisán de Lady Amherst.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 2 -->
+
+      <h2 id="accordion-flush-heading-2">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-2"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-2"
+        >
+          <span>Historia natural</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-2"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-2"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Su alimentación es variada; comen insectos, hojas, gramíneas y
+            pétalos de flores. En estado natural recorren las praderas, no es
+            común verlos en los bosques. La gran mayoría son polígamos.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 3 -->
+
+      <h2 id="accordion-flush-heading-3">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-3"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-3"
+        >
+          <span>Conservación</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-3"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-3"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El faisán dorado está catalogado como especie de preocupación menor
+            según la Lista Roja de la UICN. No obstante, se cree que su
+            población va decreciendo debido a que es perseguido por los
+            agricultores por ser considerado una plaga para los cultivos.
+            También se encuentra amenazado por la tala de árboles e incendios
+            forestales que degradan su hábitat, además del contrabando ilegal
+            para su venta como ave de compañía y la caza furtiva por deporte y
+            para la venta de su carne. Desde el año 2019 este faisán forma parte
+            del programa de cría en cautividad ESB coordinado por Iñaki
+            Hernández. Este programa pretende dar cobertura a sus criadores, y
+            marcar unas líneas de trabajo adecuadas para garantizar la pureza de
+            las poblaciones cautivas en Europa.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGES -->
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTXEMkJQuyQV2sA02z31wLL3tk_muw2okBrgplDfVbfB544-XR"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://cdn.pixabay.com/photo/2023/02/12/13/34/bird-7785106_1280.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://pbs.twimg.com/media/DaUNGlIUwAEwU3x.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/150563021/1800"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <a href="/" class="flex justify-center mt-4">
+      <button
+        type="button"
+        class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+      >
+        ¿Quires ver las demás mesas?
+      </button>
+    </a>
+  </main>
+</Layout>
