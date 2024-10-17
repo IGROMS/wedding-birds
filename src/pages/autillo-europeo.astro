@@ -1,0 +1,260 @@
+---
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Autillo europeo">
+	<main class="md:px-96">
+		<div class="flex justify-center">
+			<img
+				src="./images/birds/Autillo.png"
+				alt="Autillo europeo"
+				class="max-h-80"
+			/>
+		</div>
+
+		<!-- TITLE -->
+
+		<h1
+			class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+		>
+			Autillo europeo
+		</h1>
+		<h2 class="italic font-serif text-gray-600 text-center">Otus scops</h2>
+		<div class="px-4 flex justify-between mt-4">
+			<!-- TAXONOMY -->
+
+			<div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+					<p class="">Strigiformes</p>
+				</div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+					<p class="">Strigidae</p>
+				</div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+					<p class="">Otus</p>
+				</div>
+			</div>
+
+			<!-- CONSERVATION STATUS -->
+
+			<div class="flex flex-col items-center">
+				<h3 class="dark:text-gray-400 mr- font-medium">
+					Estado de conservación
+				</h3>
+				<StatusButton title="lc" />
+			</div>
+		</div>
+
+		<!-- FIRST DESCRIPTION -->
+
+		<p class="px-3 mt-8 text-left">
+			El autillo europeo (Otus scops) es una especie de ave estrigiforme de la
+			familia Strigidae propia de Eurasia y África.
+		</p>
+
+		<div
+			id="accordion-flush"
+			data-accordion="collapse"
+			data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+			data-inactive-classes="text-gray-500 dark:text-gray-400"
+			class="px-3 text-left mb-4"
+		>
+			<!-- ACCORDION 1 -->
+
+			<h2 id="accordion-flush-heading-1">
+				<button
+					type="button"
+					class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+					data-accordion-target="#accordion-flush-body-1"
+					aria-expanded="false"
+					aria-controls="accordion-flush-body-4"
+				>
+					<span>Descripción</span>
+					<svg
+						data-accordion-icon
+						class="w-3 h-3 rotate-180 shrink-0"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 10 6"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5 5 1 1 5"></path>
+					</svg>
+				</button>
+			</h2>
+			<div
+				id="accordion-flush-body-1"
+				class="hidden"
+				aria-labelledby="accordion-flush-heading-1"
+			>
+				<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						Es la rapaz nocturna más pequeña de la península ibérica, con 20 cm
+						de longitud, 50 cm de envergadura y 100 g de peso, siendo la hembra
+						mayor que el macho. Su plumaje es extremadamente críptico, pasando
+						completamente inadvertido en sus posaderos en las ramas de los
+						árboles donde vive. El iris de los ojos es de color amarillo, el
+						pico es negro y presenta dos penachos faciales a modo de orejas,
+						bien visibles cuando se posa en posición erguida. El canto es un shi
+						aflautado similar al sonar de los barcos y submarinos.
+					</p>
+				</div>
+			</div>
+
+			<!-- ACCORDION 2 -->
+
+			<h2 id="accordion-flush-heading-2">
+				<button
+					type="button"
+					class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+					data-accordion-target="#accordion-flush-body-2"
+					aria-expanded="false"
+					aria-controls="accordion-flush-body-2"
+				>
+					<span>Distribución y hábitat</span>
+					<svg
+						data-accordion-icon
+						class="w-3 h-3 rotate-180 shrink-0"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 10 6"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5 5 1 1 5"></path>
+					</svg>
+				</button>
+			</h2>
+			<div
+				id="accordion-flush-body-2"
+				class="hidden"
+				aria-labelledby="accordion-flush-heading-2"
+			>
+				<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						En verano se distribuye por toda el área mediterránea (España,
+						Portugal, Francia, Italia, Grecia, Países Balcánicos, Turquía y
+						países del Norte de África), llegando en su límite septentrional
+						hasta Alemania, Polonia y el Sur de Rusia. En invierno se desplaza
+						al sur del desierto del Sahara pero sin llegar al bosque tropical.
+					</p>
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						El hábitat óptimo del autillo son los sotos fluviales, arboledas
+						próximas a los ríos, intercalado con espacios abiertos para cazar;
+						también se puede encontrar en parques y jardines.
+					</p>
+				</div>
+			</div>
+
+			<!-- ACCORDION 3 -->
+
+			<h2 id="accordion-flush-heading-3">
+				<button
+					type="button"
+					class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+					data-accordion-target="#accordion-flush-body-3"
+					aria-expanded="false"
+					aria-controls="accordion-flush-body-3"
+				>
+					<span>Comportamiento</span>
+					<svg
+						data-accordion-icon
+						class="w-3 h-3 rotate-180 shrink-0"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 10 6"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5 5 1 1 5"></path>
+					</svg>
+				</button>
+			</h2>
+			<div
+				id="accordion-flush-body-3"
+				class="hidden"
+				aria-labelledby="accordion-flush-heading-3"
+			>
+				<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						Es un animal estrictamente nocturno. Realiza grandes movimientos
+						migratorios, pasando los inviernos en el África subsahariana y
+						desplazándose hacia Europa, llegando al centro de la España
+						peninsular hacia el equinoccio de primavera (en la sabiduría popular
+						se le reconoce, a pesar de no poder observarlo debido a su hábito
+						nocturno, por escuchar su ulular cuando el invierno concluye y los
+						días empiezan a ser templados). Una vez establecido en el sitio
+						elegido, permanece indefectiblemente en el mismo lugar para
+						reproducirse y criar a los pollos hacia el verano, migrando a
+						latitudes inferiores al terminar el otoño. A menudo utiliza los
+						agujeros hechos en los troncos de los árboles por el pito real
+						(Picus viridis) para establecer su nido, pero tampoco desprecia las
+						cajas nido.
+					</p>
+				</div>
+			</div>
+
+			<!-- IMAGES -->
+
+			<div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+				<div class="grid gap-4">
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Scops_Owl_%28Otus_scops%29%2C_Kalloni%2C_Lesvos%2C_Greece%2C_19.04.2015_%2816773748434%29.jpg/1280px-Scops_Owl_%28Otus_scops%29%2C_Kalloni%2C_Lesvos%2C_Greece%2C_19.04.2015_%2816773748434%29.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://diario.madrid.es/cieacasadecampo/wp-content/uploads/sites/61/2020/04/autllos-1000x625.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+				<div class="grid gap-4">
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://seo.org/wp-content/uploads/2016/11/Autillo_europeo-%C2%A9Tomas-Hilg.jpg"
+							alt=""
+						/>
+					</div>
+					<!-- <div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwARUosIzWNxBmca4qsZXriRIdebJ6Hlv5GEPeH3curkHWyyWdl4zrKwDfq7dDR-BiByHxtRLlpM7e476ib1g1jxFv7d2rborwyOGaIHXYUjUVbda8600Oo2PYWwR_uhcYNgSrfj6lFmRq/s400/milano-real-milvus.jpg"
+							alt=""
+						/>
+					</div> -->
+				</div>
+			</div>
+			<a href="/" class="flex justify-center mt-4">
+				<button
+					type="button"
+					class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+				>
+					¿Quires ver las demás mesas?
+				</button>
+			</a>
+		</div>
+	</main>
+</Layout>
