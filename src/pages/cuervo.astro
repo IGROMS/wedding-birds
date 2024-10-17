@@ -1,0 +1,348 @@
+---
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Cuervo">
+	<main class="md:px-96">
+		<div class="flex justify-center">
+			<img src="./images/birds/Cuervo.png" alt="Cuervo" class="max-h-80" />
+		</div>
+
+		<!-- TITLE -->
+
+		<h1
+			class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+		>
+			Cuervo
+		</h1>
+		<h2 class="italic font-serif text-gray-600 text-center">Corvus corax</h2>
+		<div class="px-4 flex justify-between mt-4">
+			<!-- TAXONOMY -->
+
+			<div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+					<p class="">Passeriformes</p>
+				</div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+					<p class="">Corvidae</p>
+				</div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+					<p class="">Corvus</p>
+				</div>
+			</div>
+
+			<!-- CONSERVATION STATUS -->
+
+			<div class="flex flex-col items-center">
+				<h3 class="dark:text-gray-400 mr- font-medium">
+					Estado de conservación
+				</h3>
+				<StatusButton title="lc" />
+			</div>
+		</div>
+
+		<!-- FIRST DESCRIPTION -->
+
+		<p class="px-3 mt-8 text-left">
+			El cuervo grande (Corvus corax), anteriormente denominado cuervo común por
+			la SEO, es una especie de ave paseriforme de la familia Corvidae. Presente
+			en casi todo el hemisferio septentrional, es la especie de córvido con la
+			mayor superficie de distribución. A pesar de ello, la corneja negra
+			(Corvus corone), de menor tamaño aunque muy similar en su aspecto
+			morfológico externo, es muy abundante en sus propias áreas de
+			distribución, por lo que a menudo se confunde a las cornejas negras con
+			cuervos grandes. Con el cuervo de pico grueso, el cuervo grande es el
+			mayor de los córvidos y probablemente la paseriforme más pesada; en su
+			madurez, el cuervo grande mide entre 52 y 69 cm de longitud y su peso
+			varía de 0,69 a 1,7 kg. Los cuervos grandes viven generalmente de diez a
+			quince años, pero algunos individuos han vivido cuarenta años. Los jóvenes
+			pueden desplazarse en grupos pero las parejas ya formadas permanecen
+			juntas toda su vida, cada pareja defendiendo un territorio. Existen ocho
+			subespecies conocidas que se diferencian muy poco aparentemente, aunque
+			estudios recientes hayan demostrado diferencias genéticas significativas
+			entre las poblaciones de distintas regiones.
+		</p>
+		<p class="px-3 mt-8 text-left">
+			El cuervo grande coexiste con los humanos desde hace millares de años y en
+			algunas regiones es tan abundante que se considera una especie nociva. Una
+			parte de su éxito se debe a su régimen omnívoro; el cuervo grande es
+			extremadamente oportunista, alimentándose de carroñas, de insectos, de
+			residuos alimentarios, de cereales, de frutas y de pequeños animales. Se
+			han observado varias demostraciones notables de resolución de problemas en
+			esta especie, lo que hace pensar que el cuervo grande es muy inteligente.
+		</p>
+		<p class="px-3 mt-8 text-left">
+			A través de los siglos, el cuervo grande ha sido objeto de mitos, de
+			folclore y de representaciones en las artes y la literatura. En varias
+			culturas antiguas —incluyendo las de Escandinavia, Irlanda, Gales, Bután,
+			la costa noroeste de América del Norte, Siberia y noroeste de Asia— ha
+			sido venerado como un dios o un símbolo espiritual.
+		</p>
+
+		<div
+			id="accordion-flush"
+			data-accordion="collapse"
+			data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+			data-inactive-classes="text-gray-500 dark:text-gray-400"
+			class="px-3 text-left mb-4"
+		>
+			<!-- ACCORDION 1 -->
+
+			<h2 id="accordion-flush-heading-1">
+				<button
+					type="button"
+					class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+					data-accordion-target="#accordion-flush-body-1"
+					aria-expanded="false"
+					aria-controls="accordion-flush-body-4"
+				>
+					<span>Descripción</span>
+					<svg
+						data-accordion-icon
+						class="w-3 h-3 rotate-180 shrink-0"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 10 6"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5 5 1 1 5"></path>
+					</svg>
+				</button>
+			</h2>
+			<div
+				id="accordion-flush-body-1"
+				class="hidden"
+				aria-labelledby="accordion-flush-heading-1"
+			>
+				<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						Un cuervo grande maduro mide entre 52 y 69 cm de longitud con una
+						envergadura de 115 a 160 cm en Europa: 144-160 cm el macho y 124-138
+						cm la hembra. Su peso varía de 0,7 a 1,7 kg lo que le hace ser la
+						más pesada de las paseriformes. Las aves de las regiones más frías
+						como el Himalaya y Groenlandia son generalmente mayores, con un pico
+						ligeramente más grande, mientras que los individuos de las regiones
+						más cálidas son más pequeños, con un pico proporcionalmente más
+						pequeño. El pico es fuerte, negro y ligeramente curvado. La cola es
+						relativamente larga, el cuello es bastante grueso, y el iris es
+						marrón oscuro. El plumaje es generalmente negro pero posee reflejos
+						iridiscentes azulados y púrpuras. Las plumas de la garganta se
+						alargan y la base de las plumas del cuello es de un marrón gris
+						pálido. El plumaje de los jóvenes es similar al de los adultos pero
+						más mate y el iris es azul gris. Además de su gran tamaño, el cuervo
+						grande difiere de las cornejas negras por su pico más fuerte y más
+						grueso, las plumas de la garganta y la cola en forma de rombo, en
+						lugar de casi recto, como la corneja negra.
+					</p>
+				</div>
+			</div>
+
+			<!-- ACCORDION 2 -->
+
+			<h2 id="accordion-flush-heading-2">
+				<button
+					type="button"
+					class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+					data-accordion-target="#accordion-flush-body-2"
+					aria-expanded="false"
+					aria-controls="accordion-flush-body-2"
+				>
+					<span>Distribución y hábitat</span>
+					<svg
+						data-accordion-icon
+						class="w-3 h-3 rotate-180 shrink-0"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 10 6"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5 5 1 1 5"></path>
+					</svg>
+				</button>
+			</h2>
+			<div
+				id="accordion-flush-body-2"
+				class="hidden"
+				aria-labelledby="accordion-flush-heading-2"
+			>
+				<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						La mayoría de los cuervos prefieren las zonas costeras o las zonas
+						de bosques con grandes extensiones cercanas abiertas para anidar y
+						alimentarse. En algunas regiones con fuertes concentraciones de
+						poblaciones humanas como en California en los Estados Unidos, se
+						aprovechan de las abundantes fuentes de comida y su número va en
+						aumento.
+					</p>
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						El cuervo es capaz de prosperar en numerosos climas; en efecto, esta
+						especie posee el área de distribución más amplia de los miembros de
+						su clase. Su área de distribución se extiende por toda la zona
+						Holoártica, desde el Ártico y hábitats moderados de Norteamérica y
+						de Europa hasta los desiertos del África Septentrional, y las islas
+						del Pacífico. En las islas británicas, es más grande en Escocia, el
+						norte de Inglaterra y el oeste de Irlanda. En el Tíbet, se ha
+						observado en altitudes de 5000 m y hasta los 6350 m en el Everest.
+					</p>
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						El cuervo es generalmente un residente permanente en toda su área de
+						distribución excepto en el Ártico. Los individuos jóvenes pueden
+						dispersarse localmente.
+					</p>
+				</div>
+			</div>
+
+			<!-- ACCORDION 3 -->
+
+			<h2 id="accordion-flush-heading-3">
+				<button
+					type="button"
+					class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+					data-accordion-target="#accordion-flush-body-3"
+					aria-expanded="false"
+					aria-controls="accordion-flush-body-3"
+				>
+					<span>Inteligencia y vocalizaciones</span>
+					<svg
+						data-accordion-icon
+						class="w-3 h-3 rotate-180 shrink-0"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 10 6"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5 5 1 1 5"></path>
+					</svg>
+				</button>
+			</h2>
+			<div
+				id="accordion-flush-body-3"
+				class="hidden"
+				aria-labelledby="accordion-flush-heading-3"
+			>
+				<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						El cuervo grande posee uno de los cerebros más grandes de todas las
+						especies de aves. Muestra también varias habilidades como la
+						resolución de problemas así como la imitación y la intuición. Una
+						experiencia concebida para evaluar la intuición y la resolución de
+						problemas, presentaba un pedazo de carne atado a una cuerda que
+						colgaba de un posadero horizontal. Para alcanzar la carne, el pájaro
+						debía posarse sobre la percha, tirar de la cuerda en varias etapas y
+						sujetar la cuerda en cada etapa, con el fin de ir acortándola.
+						Cuatro de los cinco superaron la prueba, y la transición desde la
+						ausencia de éxito (ignorar la comida o simplemente no tirar de la
+						cuerda) hasta un éxito constante y previsible (arrastrar la carne
+						hasta la percha), se hizo sin aprendizaje aparente. Se ha observado
+						cómo los cuervos dirigen a otros animales para que trabajen para
+						ellos, por ejemplo, llamando a los lobos y a los coyotes al lugar de
+						una carroña. Los cánidos abren entonces la carroña, lo que la hace
+						más accesible a los cuervos. También se sabe que observan el lugar
+						donde otros cuervos ocultan su comida y se acuerdan de estos
+						lugares, lo que les permite robársela. El cuervo grande es conocido
+						por robar y ocultar objetos brillantes como guijarros, trozos de
+						metal y pelotas de golf. Una hipótesis indica que los jóvenes son
+						curiosos hacia toda cosa nueva y que la atracción por los objetos
+						redondos y brillantes se basaría en su semejanza con huevos. Los
+						adultos pierden este interés intenso para lo inusual y pasan a ser
+						neófobos. Recientemente, los investigadores han reconocido que las
+						aves juegan. Los jóvenes cuervos están entre los más jugadores de
+						todas las especies de aves. Se les ha observado deslizándose a lo
+						largo de montones de nieve, al parecer por simple placer. Juegan
+						incluso con otras especies, por ejemplo juegan al juego del ratón y
+						el gato con lobos y perros. El cuervo es famoso por sus
+						espectaculares acrobacias aéreas, como los rizos. Un estudio
+						reciente además afirma que los cuervos son capaces de reconocer
+						diferentes voces humanas, así como llamadas de aves de otras
+						especies.
+					</p>
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						Esta especie posee un grito característico, el crascitar: un
+						«rrok-rrok», profundo y cavernoso, que difiere del de los otros
+						córvidos según los observadores con experiencia. Su complejo
+						vocabulario incluye un «toc-toc-toc», un «kraa» secos y roncos, un
+						graznido gutural y bajo así como varios gritos de naturaleza casi
+						musical. Como cras significa «mañana» en latín, y son aves
+						habitualmente carroñeras, se consideraban habitualmente aves de mal
+						agüero y en ese sentido compuso Edgar Allan Poe su famoso poema El
+						cuervo, cuyo estribillo es: Y el cuervo dijo: "Nunca más". Voz del
+						cuervo grande Duración: 6 segundos.0:06 ¿Problemas al reproducir
+						este archivo? Cuervo grande. Al igual que otros córvidos, el cuervo
+						grande puede imitar los sonidos de su medio ambiente, incluyendo la
+						voz humana. Posee un amplio abanico de vocalizaciones. Los gritos
+						observados incluyen los gritos de alarma, los gritos de vuelo y los
+						gritos de persecución. El cuervo grande produce también sonidos no
+						vocales incluidos ruidos con las alas y crujidos de pico. Los
+						crujidos se observaron más a menudo en las hembras que en los
+						machos. Si desaparece un miembro de la pareja, el compañero
+						reproduce sus gritos reclamando su regreso.
+					</p>
+				</div>
+			</div>
+
+			<!-- IMAGES -->
+
+			<div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+				<div class="grid gap-4">
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Raven_croak.jpg/220px-Raven_croak.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/London_tower_ravens.jpg/250px-London_tower_ravens.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+				<div class="grid gap-4">
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/The-Twa-Corbies.jpg/220px-The-Twa-Corbies.jpg"
+							alt=""
+						/>
+					</div>
+					<!-- <div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://upload.wikimedia.org/wikipedia/commons/2/20/Picus_viridis_sharpei_033.jpg"
+							alt=""
+						/>
+					</div> -->
+				</div>
+			</div>
+			<a href="/" class="flex justify-center mt-4">
+				<button
+					type="button"
+					class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+				>
+					¿Quires ver las demás mesas?
+				</button>
+			</a>
+		</div>
+	</main>
+</Layout>

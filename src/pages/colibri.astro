@@ -1,0 +1,222 @@
+---
+import Menu from "../components/Menu.astro";
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Colibrí">
+	<main class="md:px-96">
+		<div class="flex justify-center">
+			<img src="./images/birds/Colibri.png" alt="Colibrí" class="max-h-80"/>
+		</div>
+
+		<!-- TITLE -->
+
+		<h1
+			class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+		>
+			Colibrí
+		</h1>
+		<h2 class="italic font-serif text-gray-600 text-center">
+			Colibri coruscans
+		</h2>
+		<div class="px-4 flex justify-between mt-4">
+			<!-- TAXONOMY -->
+
+			<div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+					<p class="">Apodiformes</p>
+				</div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+					<p class="">Trochilidae</p>
+				</div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+					<p class="">Colibri</p>
+				</div>
+			</div>
+
+			<!-- CONSERVATION STATUS -->
+
+			<div class="flex flex-col items-center">
+				<h3 class="dark:text-gray-400 mr- font-medium">
+					Estado de conservación
+				</h3>
+				<StatusButton title="lc" />
+			</div>
+		</div>
+
+		<!-- FIRST DESCRIPTION -->
+
+		<p class="px-3 mt-8 text-left">
+			El colibrí rutilante (Colibri coruscans), también denominado colibrí
+			grande (en Argentina), chillón común o colibrí chillón (en Colombia),
+			picaflor azul (en Chile), orejivioleta ventriazul (en Ecuador),
+			oreja-violeta de vientre azul (en Perú), colibrí orejivioleta grande (en
+			Venezuela), colibrí verde mayor o picaflor de cara azul, es una especie de
+			ave apodiforme de la familia Trochilidae, perteneciente al género Colibri.
+			Es nativo del norte y oeste de América del Sur.
+		</p>
+
+		<div
+			id="accordion-flush"
+			data-accordion="collapse"
+			data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+			data-inactive-classes="text-gray-500 dark:text-gray-400"
+			class="px-3 text-left mb-4"
+		>
+			<!-- ACCORDION 1 -->
+
+			<h2 id="accordion-flush-heading-1">
+				<button
+					type="button"
+					class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+					data-accordion-target="#accordion-flush-body-1"
+					aria-expanded="false"
+					aria-controls="accordion-flush-body-4"
+				>
+					<span>Características</span>
+					<svg
+						data-accordion-icon
+						class="w-3 h-3 rotate-180 shrink-0"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 10 6"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5 5 1 1 5"></path>
+					</svg>
+				</button>
+			</h2>
+			<div
+				id="accordion-flush-body-1"
+				class="hidden"
+				aria-labelledby="accordion-flush-heading-1"
+			>
+				<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						La especie C. coruscans fue descrita por primera vez por el
+						ornitólogo británico John Gould en 1846 bajo el nombre científico
+						Trochilus (Petasophora) coruscans; su localidad tipo es: «América
+						del Sur».
+					</p>
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						El nombre genérico masculino «Colibri» proviene de la palabra del
+						español «colibrí» que designa de forma general a los troquílidos y
+						tiene supuestamente origen en el Caribe; y el nombre de la especie
+						«coruscans», en latín significa 'centelleante'.
+					</p>
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						La subespecie propuesta C. c. rostratus Phelps Sr. & Phelps Jr.,
+						1952 (de las montañas del alto valle del Orinoco), se diferencia muy
+						pobremente de germanus; las formas propuestas C. c. iolatus (Gould),
+						1847, y C. c. buckleyi (Boucard), 1893, ésta conocida apenas por el
+						holotipo de Bolivia y que parece representar un plumaje aberrante o
+						tal vez una forma melanística, se incluyen en la nominal.
+					</p>
+				</div>
+			</div>
+
+			<!-- ACCORDION 2 -->
+
+			<h2 id="accordion-flush-heading-2">
+				<button
+					type="button"
+					class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+					data-accordion-target="#accordion-flush-body-2"
+					aria-expanded="false"
+					aria-controls="accordion-flush-body-2"
+				>
+					<span>Distribución y hábitat</span>
+					<svg
+						data-accordion-icon
+						class="w-3 h-3 rotate-180 shrink-0"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 10 6"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5 5 1 1 5"></path>
+					</svg>
+				</button>
+			</h2>
+			<div
+				id="accordion-flush-body-2"
+				class="hidden"
+				aria-labelledby="accordion-flush-heading-2"
+			>
+				<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						Se distribuye en las montañas del norte de Venezuela y a lo largo de
+						la cordillera de los Andes, desde el oeste de Venezuela, por
+						Colombia, Ecuador, Perú, Bolivia, hasta el norte de Chile y noroeste
+						de Argentina, con poblaciones disjuntas en los tepuyes del sur y
+						sureste de Venezuela, oeste de Guyana y extremo norte de Brasil.
+					</p>
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						Esta especie es considerada común en una variedad de hábitats, que
+						incluyen bordes de selvas húmedas, bosques abiertos, jardines
+						floridos, plantaciones, sub-páramo y páramo, en altitudes entre 1700
+						y 4500 m.
+					</p>
+				</div>
+			</div>
+
+		<!-- IMAGES -->
+
+		<div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+			<div class="grid gap-4">
+				<div>
+					<img
+						class="h-auto max-w-full rounded-lg"
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Colibri_coruscans.jpg/280px-Colibri_coruscans.jpg"
+						alt=""
+					/>
+				</div>
+				<div>
+					<img
+						class="h-auto max-w-full rounded-lg"
+						src="https://i1.sndcdn.com/artworks-000356409867-v2piyk-t500x500.jpg"
+						alt=""
+					/>
+				</div>
+			</div>
+			<div class="grid gap-4">
+				<div>
+					<img
+						class="h-auto max-w-full rounded-lg"
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/MonographTrochi4Goul_0102.jpg/240px-MonographTrochi4Goul_0102.jpg"
+						alt=""
+					/>
+				</div>
+				<!-- <div>
+					<img
+						class="h-auto max-w-full rounded-lg"
+						src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/150563021/1800"
+						alt=""
+					/>
+				</div> -->
+			</div>
+		</div>
+		<a href="/" class="flex justify-center mt-4">
+			<button
+				type="button"
+				class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+			>
+				¿Quires ver las demás mesas?
+			</button>
+		</a>
+	</main>
+</Layout>
