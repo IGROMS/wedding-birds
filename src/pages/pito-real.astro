@@ -4,324 +4,227 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Pito Real">
-  <main class="md:px-96">
-    <div class="flex justify-center">
-      <img src="./images/birds/Pito Real.png" alt="Pito Real" class="max-h-80" />
-    </div>
+	<main class="md:px-96">
+		<div class="flex justify-center">
+			<img
+				src="./images/birds/Pito Real.png"
+				alt="Pito Real"
+				class="max-h-80"
+			/>
+		</div>
 
-    <!-- TITLE -->
+		<!-- TITLE -->
 
-    <h1
-      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
-    >
-      Pito Real
-    </h1>
-    <h2 class="italic font-serif text-gray-600 text-center">Hirundo rustica</h2>
-    <div class="px-4 flex justify-between mt-4">
-      <!-- TAXONOMY -->
+		<h1
+			class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+		>
+			Pito Real
+		</h1>
+		<h2 class="italic font-serif text-gray-600 text-center">Picus viridis</h2>
+		<div class="px-4 flex justify-between mt-4">
+			<!-- TAXONOMY -->
 
-      <div>
-        <div class="flex">
-          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
-          <p class="">Passeriformes</p>
-        </div>
-        <div class="flex">
-          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
-          <p class="">Hirundinidae</p>
-        </div>
-        <div class="flex">
-          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
-          <p class="">Hirundo</p>
-        </div>
-      </div>
+			<div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+					<p class="">Piciformes</p>
+				</div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+					<p class="">Picidae</p>
+				</div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+					<p class="">Picus</p>
+				</div>
+			</div>
 
-      <!-- CONSERVATION STATUS -->
+			<!-- CONSERVATION STATUS -->
 
-      <div class="flex flex-col items-center">
-        <h3 class="dark:text-gray-400 mr- font-medium">
-          Estado de conservación
-        </h3>
-        <StatusButton title="lc" />
-      </div>
-    </div>
+			<div class="flex flex-col items-center">
+				<h3 class="dark:text-gray-400 mr- font-medium">
+					Estado de conservación
+				</h3>
+				<StatusButton title="lc" />
+			</div>
+		</div>
 
-    <!-- FIRST DESCRIPTION -->
+		<!-- FIRST DESCRIPTION -->
 
-    <p class="px-3 mt-8 text-left">
-      La Pito Real común (Hirundo rustica) es una especie de ave paseriforme de
-      la familia Hirundinidae de hábitos migratorios. Se trata de la Pito Real
-      con la mayor área de distribución del mundo. Habita en Europa, Asia,
-      África, América y parte de Australasia.
-    </p>
-    <p class="px-3 mt-8 text-left">
-      La Pito Real común es un ave de campo abierto que normalmente utiliza
-      estructuras construidas por el ser humano para reproducirse y que, en
-      consecuencia, se ha diseminado con la expansión humana. Construye nidos en
-      forma de taza, con bolitas de barro en graneros y construcciones
-      similares, y se alimenta de insectos que atrapa en vuelo.
-    </p>
+		<p class="px-3 mt-8 text-left">
+			El carpintero verde o pito real (Picus viridis) es una especie de ave
+			piciforme de la familia Picidae. Se distribuye por la mayor parte de
+			Europa y el oeste de Asia. Habita en todo tipo de masas forestales,
+			incluso zonas de matorral, y también en parques y jardines en zonas
+			urbanas. Su población se estima entre 920 000 y 2 900 000 ejemplares.
+		</p>
+		<p class="px-3 mt-8 text-left">
+			El más común y extendido de los pájaros carpinteros, el pito real, es un
+			ave inconfundible de la que, en muchas ocasiones, se tiene referencia por
+			su característico canto: una especie de sonoro relincho que delata su
+			presencia en las arboledas ribereñas, los bosques caducifolios y las áreas
+			ajardinadas donde se instala. Activo consumidor de invertebrados, este
+			pícido dispone de una larga y pegajosa lengua con la que prospecta los
+			resquicios de los hormigueros en busca de los huevos, larvas y adultos que
+			constituyen la base de su dieta.
+		</p>
 
-    <div
-      id="accordion-flush"
-      data-accordion="collapse"
-      data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
-      data-inactive-classes="text-gray-500 dark:text-gray-400"
-      class="px-3 text-left mb-4"
-    >
-      <!-- ACCORDION 1 -->
+		<div
+			id="accordion-flush"
+			data-accordion="collapse"
+			data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+			data-inactive-classes="text-gray-500 dark:text-gray-400"
+			class="px-3 text-left mb-4"
+		>
+			<!-- ACCORDION 1 -->
 
-      <h2 id="accordion-flush-heading-1">
-        <button
-          type="button"
-          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
-          data-accordion-target="#accordion-flush-body-1"
-          aria-expanded="false"
-          aria-controls="accordion-flush-body-4"
-        >
-          <span>Descripción</span>
-          <svg
-            data-accordion-icon
-            class="w-3 h-3 rotate-180 shrink-0"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 10 6"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5 5 1 1 5"></path>
-          </svg>
-        </button>
-      </h2>
-      <div
-        id="accordion-flush-body-1"
-        class="hidden"
-        aria-labelledby="accordion-flush-heading-1"
-      >
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Se trata de un ave pequeña. El macho adulto de la subespecie nominal
-            (H. r. rustica) mide entre 14,6 y 19,9 cm de longitud, incluyendo
-            los 2 a 7 cm de las alargadas plumas externas de la cola. Tiene una
-            envergadura de entre 32 y 34,5 cm y pesa entre 16 y 22 g. Su parte
-            superior es azul metálico y su frente, barbilla y garganta, rojizos.
-            Una gruesa franja azul oscuro separa la garganta del pecho y abdomen
-            blancuzcos. Las plumas externas de la cola son alargadas, lo que le
-            brinda el distintivo aspecto profundamente ahorquillado de las
-            Pito Reals. Presenta una línea de manchas blancas a lo largo del
-            extremo externo de la parte superior de la cola. La apariencia de la
-            hembra es similar a la del macho, pero las plumas de la cola son más
-            cortas, el azul de la parte superior y de la banda del pecho es
-            menos lustroso y el pecho y abdomen son más pálidos. El juvenil es
-            más marrón y exhibe una cara rojiza más pálida y partes inferiores
-            más blancas; carece de las largas plumas de la cola de los adultos.6
-          </p>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            La distintiva combinación del rostro rojizo y la banda pectoral azul
-            facilitan la distinción entre la Pito Real común adulta y las
-            especies africanas de Hirundo y de la Pito Real australiana
-            (Hirundo neoxena), cuya área de distribución se superpone en
-            Australasia. En África, la cola más corta de los juveniles puede
-            producir una confusión con el juvenil de la Pito Real de pecho rojo
-            (Hirundo lucida), pero esta última presenta una banda pectoral más
-            angosta y más blanca en la cola.
-          </p>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            El canto de la Pito Real común es un gorjeo que a menudo termina en
-            un su-seer en el que la segunda nota es más alta que la primera si
-            bien su altura tonal es decreciente. Esta especie es
-            bastante tranquila en sus cuarteles de invernada.
-          </p>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            La muda de las plumas de vuelo tiene lugar en los cuarteles de
-            invernada, lo que dificulta la identificación subespecífica de los
-            individuos en invierno. La muda posnupcial es muy gradual y en
-            Europa comienza en agosto antes de la migración con la muda del
-            plumaje corporal y a veces con la de las plumas cobertoras medias de
-            las alas. En la India, la muda se produciría lenta e irregularmente,
-            extendiéndose sobre la mayor parte del invierno y no habiendo
-            concluido aún en abril en algunos especímenes.
-          </p>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            A diferencia de los vencejos (Apus apus), las Pito Reals se pueden
-            posar horizontalmente, ya que la longitud de sus patas les
-            proporcionan un apoyo adecuado para iniciar el vuelo de nuevo desde
-            el suelo.
-          </p>
-        </div>
-      </div>
+			<h2 id="accordion-flush-heading-1">
+				<button
+					type="button"
+					class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+					data-accordion-target="#accordion-flush-body-1"
+					aria-expanded="false"
+					aria-controls="accordion-flush-body-4"
+				>
+					<span>Descripción</span>
+					<svg
+						data-accordion-icon
+						class="w-3 h-3 rotate-180 shrink-0"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 10 6"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5 5 1 1 5"></path>
+					</svg>
+				</button>
+			</h2>
+			<div
+				id="accordion-flush-body-1"
+				class="hidden"
+				aria-labelledby="accordion-flush-heading-1"
+			>
+				<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						Es un pájaro carpintero grande, mide de 30 a 36 cm, y tiene una
+						envergadura alar de entre 45 y 51 cm. Por encima su plumaje es de
+						color verdoso, con el obispillo más amarillo; por debajo es
+						blanquecino. El píleo (parte de arriba de la cabeza) y la nuca son
+						de color rojo, el ojo es blanco y está rodeado de una zona negra; y
+						su bigotera es negra. Ambos sexos son muy similares, el macho tiene
+						el centro rojo de la mancha negra de la bigotera, mientras que la
+						hembra carece de ese rojo. Los juveniles son parecidos a los adultos
+						en el patrón de colores de su plumaje, pero este está cubierto por
+						un profuso moteado.
+					</p>
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						Las poblaciones de la subespecie ibérica (P. v. sharpei) no tienen
+						negro alrededor del ojo, sino gris oscuro, y el negro en la bigotera
+						del macho es más escaso.
+					</p>
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						Su reclamo es muy característico, es una especie de carcajada larga
+						y resonante "kaiü-kaiü-kaiück". Su canto va acelerando y es
+						descendente en tono.
+					</p>
+				</div>
+			</div>
 
-      <!-- ACCORDION 2 -->
+			<!-- ACCORDION 2 -->
 
-      <h2 id="accordion-flush-heading-2">
-        <button
-          type="button"
-          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
-          data-accordion-target="#accordion-flush-body-2"
-          aria-expanded="false"
-          aria-controls="accordion-flush-body-2"
-        >
-          <span>Taxonomía</span>
-          <svg
-            data-accordion-icon
-            class="w-3 h-3 rotate-180 shrink-0"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 10 6"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5 5 1 1 5"></path>
-          </svg>
-        </button>
-      </h2>
-      <div
-        id="accordion-flush-body-2"
-        class="hidden"
-        aria-labelledby="accordion-flush-heading-2"
-      >
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            La Pito Real común fue descrita como especie por Carlos Linneo en
-            1758 en la décima edición de su obra Systema naturae bajo el nombre
-            científico de Hirundo rustica. Hirundo significa “Pito Real” en
-            latín; rusticus quiere decir “campestre”. Es la única de las
-            especies del género Hirundo que se ha extendido a las Américas,
-            siendo la mayoría de ellas nativa de África.
-          </p>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Existen pocos problemas taxonómicos dentro del género, si bien la
-            Pito Real de pecho rojo (Hirundo lucida) ―una especie sedentaria
-            del oeste de África, la cuenca del Congo y Etiopía― era
-            anteriormente considerada una subespecie de Pito Real común. La
-            Pito Real de pecho rojo es ligeramente más pequeña que su pariente
-            migratorio, presenta una franja pectoral azul más angosta y las
-            plumas de la cola de los adultos son más cortas. En vuelo, exhibe
-            una coloración más pálida en sus partes inferiores.
-          </p>
-        </div>
-      </div>
+			<h2 id="accordion-flush-heading-2">
+				<button
+					type="button"
+					class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+					data-accordion-target="#accordion-flush-body-2"
+					aria-expanded="false"
+					aria-controls="accordion-flush-body-2"
+				>
+					<span>Taxonomía</span>
+					<svg
+						data-accordion-icon
+						class="w-3 h-3 rotate-180 shrink-0"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 10 6"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5 5 1 1 5"></path>
+					</svg>
+				</button>
+			</h2>
+			<div
+				id="accordion-flush-body-2"
+				class="hidden"
+				aria-labelledby="accordion-flush-heading-2"
+			>
+				<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						En la lista de aves del mundo del Congreso Ornitológico
+						Internacional (IOC World Bird List) se describe, desde su versión
+						3.5 del 30 de septiembre de 2013, a la subespecie presente en la
+						península ibérica como una especie diferente con el nombre
+						científico de Picus sharpei si bien, esta escisión no está incluida
+						en la lista de aves de España de la Sociedad Española de Ornitología
+						en su versión del año 2012.
+					</p>
+				</div>
+			</div>
 
-      <!-- ACCORDION 3 -->
+			<!-- IMAGES -->
 
-      <h2 id="accordion-flush-heading-3">
-        <button
-          type="button"
-          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
-          data-accordion-target="#accordion-flush-body-3"
-          aria-expanded="false"
-          aria-controls="accordion-flush-body-3"
-        >
-          <span>Referencia literaria</span>
-          <svg
-            data-accordion-icon
-            class="w-3 h-3 rotate-180 shrink-0"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 10 6"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5 5 1 1 5"></path>
-          </svg>
-        </button>
-      </h2>
-      <div
-        id="accordion-flush-body-3"
-        class="hidden"
-        aria-labelledby="accordion-flush-heading-3"
-      >
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Las Pito Reals, utilizando un recurso literario como el hipérbaton,
-            aparecen en una de las Rimas más famosas de Gustavo Adolfo Bécquer.
-          </p>
-          <div class="ml-1 pl-2 py-4 border-l-2 border-slate-700 bg-slate-50">
-            <p>
-              Volverán las oscuras Pito Reals<br />
-              en tu balcón sus nidos a colgar,<br />
-              y otra vez con el ala a sus cristales<br />
-              jugando llamarán.<br />
-              Pero aquellas que el vuelo refrenaban<br />
-              tu hermosura y mi dicha a contemplar,<br />
-              aquellas que aprendieron nuestros nombres...<br />
-              ésas... ¡no volverán!<br />
-              Volverán las tupidas madreselvas<br />
-              de tu jardín las tapias a escalar,<br />
-              y otra vez a la tarde aún más hermosas<br />
-              sus flores se abrirán.<br />
-              Pero aquellas cuajadas de rocío<br />
-              cuyas gotas mirábamos temblar<br />
-              y caer como lágrimas del día...<br />
-              ésas... ¡no volverán!<br />
-              Volverán del amor en tus oídos<br />
-              las palabras ardientes a sonar;<br />
-              tu corazón de su profundo sueño<br />
-              tal vez despertará.<br />
-              Pero mudo y absorto y de rodillas,<br />
-              como se adora a Dios ante su altar,<br />
-              como yo te he querido..., desengáñate,<br />
-              nadie así te amará.<br />
-            </p>
-            <p class="font-semibold mt-2">Gustavo Adolfo Bécquer</p>
-          </div>
-        </div>
-      </div>
-
-    <!-- IMAGES -->
-
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
-      <div class="grid gap-4">
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Barn_Swallow_%28Hirundo_rustica%29_in_AP_W_IMG_3861.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src="https://upload.wikimedia.org/wikipedia/commons/2/24/Landsvale.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="grid gap-4">
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src="https://i0.wp.com/laprensamagazine.cat/wp-content/uploads/2022/05/shutterstock_1740607679-scaled.jpg?fit=2560%2C1706&ssl=1"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src="https://lh3.googleusercontent.com/proxy/69cXoFm1Y-jvSDG8AUHsKe6XC6v852S8uJnUfDAr2O5km2wX-O2Pepw57i8fxdK4EV8BDFTPSxFW8qzgLvYneECw0NdRIWe7LfulTOaYZvsU1HceBPDrMOno"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-    <a href="/" class="flex justify-center mt-4">
-      <button
-        type="button"
-        class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
-      >
-        ¿Quires ver las demás mesas?
-      </button>
-    </a>
-  </main>
+			<div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+				<div class="grid gap-4">
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Gr%C3%BCnspecht_Picus_viridis.jpg/180px-Gr%C3%BCnspecht_Picus_viridis.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://www.birdiememory.com/static/images/birds/pic-vert/picture0@2x.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+				<div class="grid gap-4">
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Picus_viridis_1.jpg/180px-Picus_viridis_1.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://upload.wikimedia.org/wikipedia/commons/2/20/Picus_viridis_sharpei_033.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+			<a href="/" class="flex justify-center mt-4">
+				<button
+					type="button"
+					class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+				>
+					¿Quires ver las demás mesas?
+				</button>
+			</a>
+		</div>
+	</main>
 </Layout>
