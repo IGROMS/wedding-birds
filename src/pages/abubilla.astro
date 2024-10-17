@@ -1,0 +1,287 @@
+---
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Abubilla">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img src="./images/birds/Abubilla.png" alt="Abubilla" class="max-h-80" />
+    </div>
+
+    <!-- TITLE -->
+
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Abubilla
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">Upupa epops</h2>
+    <div class="px-4 flex justify-between mt-4">
+      <!-- TAXONOMY -->
+
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Bucerotiformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Upupidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Upupa</p>
+        </div>
+      </div>
+
+      <!-- CONSERVATION STATUS -->
+
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">
+          Estado de conservación
+        </h3>
+        <StatusButton title="lc" />
+      </div>
+    </div>
+
+    <!-- FIRST DESCRIPTION -->
+
+    <p class="px-3 mt-8 text-left">
+      La abubilla (Upupa epops) es una especie de ave bucerotiforme de la
+      familia Upupidae; no obstante, en la taxonomía de Sibley-Ahlquist, Upupa
+      es separado en un orden propio, los Upupiformes. Se trata de una especie
+      diurna, solitaria, territorial y migratoria.
+    </p>
+    <p class="px-3 mt-8 text-left">
+      El nombre científico es resultado de la unión del nombre de la abubilla en
+      latín: upupa, y en griego: ἔποψ épops. En español la abubilla recibe
+      diversos nombres según las regiones. Los distintos nombres suelen ser
+      onomatopéyicos, con aliteraciones (repetición de una misma letra) que
+      intentan reproducir su característico canto. En Andalucía recibe el nombre
+      de gallito (de) marzo o bubilla. En Aragón se la conoce popularmente con
+      el nombre de gurgute, papute, cucute y cuscute. En algunas zonas de
+      Castilla y Aragón se conoce como cucuta o cucut. Popularmente también se
+      conoce como cuquillo. En Canarias como apupu o tabobo. En la Comunidad
+      Valenciana, Cataluña y las Baleares como puput, cucuch, palput o porput.
+      En Galicia recibe el nombre de bubela. En la Región de Murcia se le conoce
+      con el nombre de parputa. En la comarca leonesa de La Maragatería se
+      conoce con el nombre de budibilla. En Navarra se le llama gallico de San
+      Martín. En Extremadura se la conoce como poipa, en algunos pueblos de la
+      provincia de Burgos como bubulilla y en Ávila se la conoce como abubute.
+    </p>
+
+    <div
+      id="accordion-flush"
+      data-accordion="collapse"
+      data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+      data-inactive-classes="text-gray-500 dark:text-gray-400"
+      class="px-3 text-left mb-4"
+    >
+      <!-- ACCORDION 1 -->
+
+      <h2 id="accordion-flush-heading-1">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-1"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-4"
+        >
+          <span>Taxonomía</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-1"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-1"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Su plumaje puede variar desde un pardo rosado a un canela oscuro o
+            rojizo, con las alas y la cola listadas de blanco y negro. Está
+            dotado en la cabeza de un penacho de plumas eréctiles como un
+            abanico, pero casi siempre lo mantiene cerrado. Miden de 25 a 29 cm
+            (centímetros) de largo, con 44 a 48 cm de envergadura de alas. Son
+            inconfundibles, especialmente por el vuelo errático que es como el
+            de una mariposa gigante.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 2 -->
+
+      <h2 id="accordion-flush-heading-2">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-2"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-2"
+        >
+          <span>Historia natural</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-2"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-2"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Camina por el suelo como un estornino. Su canto es un reclamo hueco
+            y habitualmente trisilábico “up-up-up”, el cual le da origen a su
+            nombre científico. Las hembras mientras están en el nido y los
+            pollos tienen un olor peculiar y desagradable.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Se alimentan introduciendo su largo pico en tierra blanda o en
+            excrementos de animales en busca de insectos y sus larvas, aunque
+            come preferentemente grillos y escarabajos de gran tamaño. Es un
+            depredador natural de la procesionaria del pino.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Suele anidar en huecos de árboles viejos, cavidades de edificios,
+            grietas entre las rocas y montones de piedras. Como en el de su
+            pariente el martín pescador, tiende a contener copiosas cantidades
+            de heces y huelen muy mal, lo que sirve de protección contra
+            depredadores. Las abubillas hembras que anidan, cuando son asustadas
+            por un intruso hacen salir una pequeña gota de una secreción oleosa
+            pestilente que producen en una glándula situada en la base de la
+            cola. Esa secreción tiene esas propiedades a causa de las bacterias
+            simbiontes que crecen en la glándula, y que proporcionan al ave
+            defensas frente a posibles patógenos. Las hembras impregnan su
+            cuerpo con esa secreción oscura con frecuencia, pero además recubren
+            voluntariamente los huevos con ella untándosela con el pico, lo que
+            aumenta su éxito de eclosión.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Una de las características en su alimentación, es la ingesta de
+            gusanos de la procesionaria, en estado de crisálida, por ello es una
+            especie esencial en las zonas de pinares.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 3 -->
+
+      <!-- <h2 id="accordion-flush-heading-3">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-3"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-3"
+        >
+          <span>Pesca con Abubilla</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-3"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-3"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            En ciertas localidades de Asia, especialmente en partes de Japón y
+            China se utiliza al Abubilla para la pesca. Se les ata un
+            cordel en la parte inferior del cuello de forma que puedan capturar
+            un pez, pero no tragarlo. El pescador, una vez que el Abubilla
+            ha capturado un pez, se lo extrae (ya que ha quedado aprisionado en
+            su garganta) y lo dispone para efectuar nuevas capturas.
+          </p>
+        </div>
+      </div> -->
+
+      <!-- IMAGES -->
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Hoopoe_with_insect.jpg/250px-Hoopoe_with_insect.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Upupa_epops_Madrid_02.jpg/220px-Upupa_epops_Madrid_02.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/ABUBILLA_%28Upupa_epops%29.jpg/220px-ABUBILLA_%28Upupa_epops%29.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/608248211/320"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <a href="/" class="flex justify-center mt-4">
+        <button
+          type="button"
+          class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+        >
+          ¿Quires ver las demás mesas?
+        </button>
+      </a>
+    </div>
+  </main>
+</Layout>
