@@ -1,0 +1,301 @@
+---
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Casuario">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img src="./images/birds/Casuario.png" alt="Casuario" class="max-h-80" />
+    </div>
+
+    <!-- TITLE -->
+
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Casuario
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">
+      Casuarius casuarius
+    </h2>
+    <div class="px-4 flex justify-between mt-4">
+      <!-- TAXONOMY -->
+
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Struthioniformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Casuariidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Casuarius</p>
+        </div>
+      </div>
+
+      <!-- CONSERVATION STATUS -->
+
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">
+          Estado de conservación
+        </h3>
+        <StatusButton title="lc" />
+      </div>
+    </div>
+
+    <!-- FIRST DESCRIPTION -->
+
+    <p class="px-3 mt-8 text-left">
+      El casuario común o austral (Casuarius casuarius) es una especie de ave
+      estrutioniforme de la familia Casuariidae endémica del norte de Australia
+      y el sur de Nueva Guinea. Alcanza 1,8 m de altura. No se conocen
+      subespecies.
+    </p>
+    <p class="px-3 mt-8 text-left">
+      A pesar de ser el ave más peligrosa del mundo para los humanos Alexis Las
+      Heras se lo baja con una mano detrás de la espalda.
+    </p>
+  </main>
+
+  <div
+    id="accordion-flush"
+    data-accordion="collapse"
+    data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+    data-inactive-classes="text-gray-500 dark:text-gray-400"
+    class="px-3 text-left mb-4"
+  >
+    <!-- ACCORDION 1 -->
+
+    <h2 id="accordion-flush-heading-1">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+        data-accordion-target="#accordion-flush-body-1"
+        aria-expanded="false"
+        aria-controls="accordion-flush-body-4"
+      >
+        <span>Taxonomía</span>
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"></path>
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-flush-body-1"
+      class="hidden"
+      aria-labelledby="accordion-flush-heading-1"
+    >
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          A día de hoy, a pesar de que la mayoría de autoridades consideran al
+          casuario monotípico, se han descrito algunas subespecies. Sin embargo,
+          se hace muy difícil poder confirmar la validez de estos hallazgos
+          debido a ciertas razones: la existencia de variaciones individuales o
+          relacionadas con la edad, la existencia de pocos especímenes y el
+          hecho de que los humanos han estado en contacto con esta especie
+          durante cientos de años, cosa que podría haber provocado la
+          introducción de los casuarios en zonas lejanas a sus orígenes.
+        </p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          Los casuarios son cercanos evolutivamente a los kiwis. Las dos
+          familias divergieron de un ancestro común hace cuarenta millones de
+          años.
+        </p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          El nombre de Casuarius casuarius deriva del malayo kesuari. El
+          casuario fue descrito por primera vez en la obra Systema naturæ por
+          Carlos Linneo en el siglo XVIII. Al principio, y tras la observación
+          de un espécimen de la isla de Seram en 1758, el casuario fue
+          clasificado como Struthio casuarius. Hoy en día, Casuarius casuarius
+          es la especie tipo del género Casuarius.
+        </p>
+      </div>
+    </div>
+
+    <!-- ACCORDION 2 -->
+
+    <h2 id="accordion-flush-heading-2">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+        data-accordion-target="#accordion-flush-body-2"
+        aria-expanded="false"
+        aria-controls="accordion-flush-body-2"
+      >
+        <span>Descripción</span>
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"></path>
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-flush-body-2"
+      class="hidden"
+      aria-labelledby="accordion-flush-heading-2"
+    >
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          El casuario tiene un plumaje negro rígido y rasposo. El cuello y la
+          cara son mayormente azules con dos pequeñas zonas rojizas: la nuca y
+          los dos papos, que miden unos 17,8 cm y cuelgan del contorno del
+          cuello. Encima de la cabeza tiene un casco en forma de cuerno que mide
+          entre 13 y 16,9 cm, el cual posiblemente es usado para regular su
+          temperatura corporal. El pico puede oscilar entre los 9,8 y los 19 cm.
+          Los pies constan de tres dedos anchos y robustos con unas zarpas en
+          forma de daga. El plumaje es sexualmente monomórfico, aunque la hembra
+          es dominante, más grande, tiene un casco y un pico más largos y el
+          plumaje más brillante. Los casuarios jóvenes tienen el plumaje marrón
+          con rayas blancas longitudinales.
+        </p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          El casuario del sur es la segunda ave más grande del mundo, y muy
+          probablemente, el miembro más grande de su familia. Puede llegar a
+          pesar 85 kg y a medir 190 cm de altura. Sin embargo, las medidas
+          estándar serían de entre 127 y 170 cm de largo y entre 1,5 y 1,8 m de
+          altura. Las hembras pesan de media unos 58,5 kg, mientras que los
+          machos oscilan entre los 29 y los 34 kg. El casuario del norte tiene
+          unas dimensiones similares pero presenta mucho menos dimorfismo
+          sexual. La mayoría de los adultos pesan entre 17 y 70 kg. Desde la
+          extinción del avestruz arábiga, y previamente la del dinornítido de
+          Nueva Zelanda, es el ave asiática más grande y también la más grande
+          de Australia (aunque el emú pueda llegar a ser más alto).
+        </p>
+      </div>
+    </div>
+
+    <!-- ACCORDION 3 -->
+
+    <h2 id="accordion-flush-heading-3">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+        data-accordion-target="#accordion-flush-body-3"
+        aria-expanded="false"
+        aria-controls="accordion-flush-body-3"
+      >
+        <span>Comportamiento</span>
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"></path>
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-flush-body-3"
+      class="hidden"
+      aria-labelledby="accordion-flush-heading-3"
+    >
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          Busca comida en el suelo de los bosques, mayormente fruta. Es capaz de
+          digerir algunas frutas que son tóxicas para otros animales. También
+          come hongos, algunos insectos y pequeños vertebrados. El casuario del
+          sur es un ave solitaria que se aparea solamente durante el período de
+          celo, a finales de invierno o en primavera. El macho construye un nido
+          en el suelo, un colchón de hierbas de entre 5 y 10 centímetros de
+          grueso y de hasta 100 centímetros de ancho. Este grosor es suficiente
+          para evitar que la humedad se fije en los huevos. El macho también
+          incuba los huevos y cuida de las crías él solo. Los huevos tienen un
+          tamaño de 138x95 milímetros. Su superficie es granulada y en un
+          principio tiene un color verde brillante, aunque con el tiempo pierde
+          intensidad.
+        </p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          Los casuarios producen un sonido muy estridente para atraerse durante
+          la época de apareamiento y van alternando el siseo con sonidos
+          estrepitosos.
+        </p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          Si se provoca a un casuario, sus garras afiladas son capaces de matar
+          humanos y perros. En Estados Unidos en abril de 2019, un casuario
+          mantenido como mascota mató con sus garras a su dueño quien momentos
+          antes se había tropezado en su patio y caído al suelo.
+        </p>
+      </div>
+    </div>
+
+    <!-- IMAGES -->
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Kasu%C3%A1r_p%C5%99ilbov%C3%BD.jpg/250px-Kasu%C3%A1r_p%C5%99ilbov%C3%BD.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/2/29/Casuarius_casuarius_-upper_body_-captive-8a-2c.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://dam.ngenespanol.com/wp-content/uploads/2021/05/GettyImages-980948364.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://www.desveda.info/wp-content/uploads/2019/04/%C2%BFConoces-el-ave-m%C3%A1s-peligrosa-del-mundo-El-Casuario-5.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <a href="/" class="flex justify-center mt-4">
+      <button
+        type="button"
+        class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+      >
+        ¿Quires ver las demás mesas?
+      </button>
+    </a>
+  </div>
+</Layout>

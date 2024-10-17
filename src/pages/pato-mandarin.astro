@@ -1,0 +1,269 @@
+---
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Pato mandarín">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img src="./images/birds/Pato.png" alt="Pato mandarín" class="max-h-80" />
+    </div>
+
+    <!-- TITLE -->
+
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Pato mandarín
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">
+      Aix galericulata
+    </h2>
+    <div class="px-4 flex justify-between mt-4">
+      <!-- TAXONOMY -->
+
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Anseriformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Anatidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Aix</p>
+        </div>
+      </div>
+
+      <!-- CONSERVATION STATUS -->
+
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">
+          Estado de conservación
+        </h3>
+        <StatusButton title="lc" />
+      </div>
+    </div>
+
+    <!-- FIRST DESCRIPTION -->
+
+    <p class="px-3 mt-8 text-left">
+      El pato mandarín (Aix galericulata) es una especie de ave anseriforme de
+      vivos colores de la familia Anatidae oriunda de China, Japón y Siberia que
+      ha sido introducida en diversos puntos de Europa y que es muy apreciada
+      por su belleza, por lo que se la tiene en numerosos parques de todo el
+      mundo. Se reconocen varias subespecies.
+    </p>
+  </main>
+
+  <div
+    id="accordion-flush"
+    data-accordion="collapse"
+    data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+    data-inactive-classes="text-gray-500 dark:text-gray-400"
+    class="px-3 text-left mb-4"
+  >
+    <!-- ACCORDION 1 -->
+
+    <h2 id="accordion-flush-heading-1">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+        data-accordion-target="#accordion-flush-body-1"
+        aria-expanded="false"
+        aria-controls="accordion-flush-body-4"
+      >
+        <span>Descripción</span>
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"></path>
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-flush-body-1"
+      class="hidden"
+      aria-labelledby="accordion-flush-heading-1"
+    >
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          Elegante y de constitución robusta, puede llegar a medir 45 cm de
+          longitud, presentando un dimorfismo sexual muy acusado; solamente se
+          parecen hembra y macho cuando este está protegido por su plumaje de
+          eclipse.
+        </p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          El macho es un ave inconfundible: presenta un copete rojo con brillos
+          metálicos de color verde sobre la frente y dos franjas laterales de
+          color blanco o crema muy claro, en las que destacan los ojos oscuros y
+          el pico de un tono rojo coral. Asemejándose a unas barbas, posee unas
+          plumas de un color naranja cobrizo. El pecho y la garganta son de
+          color morado; el vientre es blanco, y los laterales son de un tono
+          crema con dos bandas azuladas, que dan paso a sendas franjas
+          anaranjadas curvadas hacia arriba.
+        </p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          La hembra es bastante parecida a la del pato joyuyo; posee un plumaje
+          mucho más discreto: tonos pardos y ocres en sus partes superiores, un
+          anillo y una banda blanca alrededor del ojo, y las partes inferiores
+          más pálidas, con los flancos moteados.
+        </p>
+      </div>
+    </div>
+
+    <!-- ACCORDION 2 -->
+
+    <h2 id="accordion-flush-heading-2">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+        data-accordion-target="#accordion-flush-body-2"
+        aria-expanded="false"
+        aria-controls="accordion-flush-body-2"
+      >
+        <span>Distribución y hábitat</span>
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"></path>
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-flush-body-2"
+      class="hidden"
+      aria-labelledby="accordion-flush-heading-2"
+    >
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          Esta especie estuvo en su día muy extendida por toda Asia oriental,
+          pero las exportaciones masivas (para parques y colecciones) y la
+          destrucción de su hábitat han reducido sus poblaciones en el este de
+          Rusia y de China por debajo de 1000 parejas en cada una de las dos
+          regiones; en Japón, sin embargo, se estima que existen unas 5000
+          parejas.Estas poblaciones asiáticas son migradoras e invernan en las
+          tierras bajas del este de China y del sur de Japón.
+        </p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          Su población mundial se estima entre 65 000 y 66 000 individuos. Es
+          muy común que algunos especímenes se escapen de colecciones, y durante
+          el siglo XX se han asilvestrado algunas poblaciones, la más importante
+          en el Reino Unido, con unas 1000 parejas. El pato mandarín suele
+          habitar zonas forestales densas cerca de lagos poco profundos, charcas
+          o lagunas.
+        </p>
+      </div>
+    </div>
+
+    <!-- ACCORDION 3 -->
+
+    <h2 id="accordion-flush-heading-3">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+        data-accordion-target="#accordion-flush-body-3"
+        aria-expanded="false"
+        aria-controls="accordion-flush-body-3"
+      >
+        <span>Creencias</span>
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"></path>
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-flush-body-3"
+      class="hidden"
+      aria-labelledby="accordion-flush-heading-3"
+    >
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          En Asia oriental los patos mandarines fueron considerados animales
+          portadores de buena fortuna, y de amor y afecto conyugal; de tal forma
+          que en China se regala una pareja de estos patos como regalo principal
+          en las bodas más importantes.
+        </p>
+      </div>
+    </div>
+
+    <!-- IMAGES -->
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mandarin.duck.arp.jpg/250px-Mandarin.duck.arp.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjJGld0iEZN8ibTTaQlqPKPvBqlzGo7iKfsdRIy3d4s0wI7hkV"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://vevico.wordpress.com/wp-content/uploads/2020/03/man.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://www.desveda.info/wp-content/uploads/2019/04/%C2%BFConoces-el-ave-m%C3%A1s-peligrosa-del-mundo-El-Pato mandarín-5.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <a href="/" class="flex justify-center mt-4">
+      <button
+        type="button"
+        class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+      >
+        ¿Quires ver las demás mesas?
+      </button>
+    </a>
+  </div>
+</Layout>

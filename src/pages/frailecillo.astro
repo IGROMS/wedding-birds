@@ -1,0 +1,355 @@
+---
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Frailecillo">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img
+        src="./images/birds/Frailecillo.png"
+        alt="Frailecillo"
+        class="max-h-80"
+      />
+    </div>
+
+    <!-- TITLE -->
+
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Frailecillo
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">
+      Fratercula arctica
+    </h2>
+    <div class="px-4 flex justify-between mt-4">
+      <!-- TAXONOMY -->
+
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Charadriiformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Alcidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Fratercula</p>
+        </div>
+      </div>
+
+      <!-- CONSERVATION STATUS -->
+
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">
+          Estado de conservación
+        </h3>
+        <StatusButton title="vu" />
+      </div>
+    </div>
+
+    <!-- FIRST DESCRIPTION -->
+
+    <p class="px-3 mt-8 text-left">
+      El frailecillo atlántico (Fratercula arctica), también conocido como
+      frailecillo común o simplemente frailecillo, es una especie de ave
+      caradriforme de la familia Alcidae.
+    </p>
+    <p class="px-3 mt-8 text-left">
+      Es el único frailecillo nativo del océano Atlántico; dos especies
+      relacionadas, la bola de fraile y el frailecillo con cuernos, se
+      encuentran en el noreste del Pacífico. El frailecillo atlántico cría en
+      Islandia, Noruega, Groenlandia, Terranova y muchas islas en el norte del
+      Atlántico. En el sur y oeste, su actividad llega hasta Maine y a las islas
+      británicas en el este. El frailecillo atlántico tiene una gran población y
+      una amplia gama. No se considera en peligro de extinción, aunque hay
+      disminución en el número de ejemplares. En tierra, tiene la típica postura
+      erguida de un alcidae. En el mar nadan en la superficie y se alimentan
+      principalmente de pequeños peces, los cuales atrapan sumergiéndose en el
+      agua, utilizando sus alas para la propulsión.
+    </p>
+  </main>
+
+  <div
+    id="accordion-flush"
+    data-accordion="collapse"
+    data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+    data-inactive-classes="text-gray-500 dark:text-gray-400"
+    class="px-3 text-left mb-4"
+  >
+    <!-- ACCORDION 1 -->
+
+    <h2 id="accordion-flush-heading-1">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+        data-accordion-target="#accordion-flush-body-1"
+        aria-expanded="false"
+        aria-controls="accordion-flush-body-4"
+      >
+        <span>Taxonomía</span>
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"></path>
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-flush-body-1"
+      class="hidden"
+      aria-labelledby="accordion-flush-heading-1"
+    >
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          El frailecillo atlántico es una especie de ave marítima que pertenece
+          a los Charadriiformes. Se encuentra en la familia de los Alcidae, que
+          incluye a los araos y los mérgulos, y los “Puffins” son familiares
+          cercanos; ambos componen la tribu Fraterculini. El frailecillo
+          atlántico es la única especie en el género Fratercula que se encuentra
+          en el océano Atlántico. Otras dos especies se pueden encontrar al
+          noreste del Pacífico, el Fratercula cirrhata y el Fratercula
+          corniculata, siendo el segundo el familiar más cercano al “Atlantic
+          Puffin”.
+        </p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          El nombre científico Fratercula proviene del latín medieval
+          fratercula, fraile, el cual hace referencia al plumaje negro con
+          blanco que asemeja las togas utilizadas en los monasterios. El nombre
+          específico “Arctica” se refiere a la distribución en el norte del ave,
+          siendo derivado del griego άρκτος ("arktos"), oso, que así mismo hace
+          referencia a la constelación del norte, la Osa Mayor. Aun cuando la
+          especie es conocida como el frailecillo común, "frailecillo atlántico"
+          es el nombre inglés recomendado por el Congreso Ornitológico
+          Internacional.
+        </p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          La única diferencia morfológica entre las tres es su tamaño. La
+          longitud del cuerpo, de las alas y del pico se incrementa a la vez que
+          la latitud lo hace también. Por ejemplo, un frailecillo del norte de
+          Islandia (subespecie naumanii) pesa alrededor de 650 g y tiene una
+          amplitud de ala de 186 mm, mientras que los faroes (subespecie grabae)
+          pesan 400 g y la longitud de sus alas es de 158 mm. Los individuos del
+          sur de Islandia (subespecie arctica) tienen un tamaño intermedio entre
+          los otros dos. Ernst Mayr ha argumentado que las diferencias en el
+          tamaño son clinales y típicas de variaciones encontradas en la
+          población periférica, y que no hay subespecies reconocidas.
+        </p>
+      </div>
+    </div>
+
+    <!-- ACCORDION 2 -->
+
+    <h2 id="accordion-flush-heading-2">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+        data-accordion-target="#accordion-flush-body-2"
+        aria-expanded="false"
+        aria-controls="accordion-flush-body-2"
+      >
+        <span>Distribución y hábitat</span>
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"></path>
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-flush-body-2"
+      class="hidden"
+      aria-labelledby="accordion-flush-heading-2"
+    >
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          El frailecillo atlántico es un ave de agua fría en el Norte del océano
+          Atlántico. Cría en las costas del noroeste de Europa, los flecos
+          árticos y hasta el este de Norteamérica. La colonia más grande está en
+          Islandia, donde el 60 % de los frailecillos atlánticos del mundo
+          anidan. La colonia más grande en el oeste del Atlántico (estimada más
+          de 260 000 parejas) se encuentra en la Reserva Ecológica de Witless
+          Bay, al sur de San Juan de Terranova. Otras localizaciones principales
+          de apareamiento incluyen las costas norte y oeste de Noruega, las
+          islas Faroe, las islas Shetland y Orkney, la costa oeste de
+          Groenlandia y las costas de Terranova. Colonias más pequeñas también
+          se encuentran en las islas británicas, el área Murmansk en Rusia,
+          Novaya Zemlya, Spitzbergen, Labrador, Nueva Escocia y Maine. Las islas
+          parecen particularmente atractivas a las aves para criar, comparadas
+          con sitios en el continente.
+        </p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          Cuando está en el mar, el ave se extiende extensamente a través del
+          océano Atlántico Norte, incluyendo el mar del Norte, y llega a entrar
+          al Círculo Ártico. En el verano, el límite al sur se extiende del
+          Norte de Francia a Maine, y en el invierno el ave llega a extenderse
+          hasta el mar Mediterráneo y Carolina del Norte. Las aguas oceánicas
+          tienen una extensión de 15 a 30 millones de kilómetros cuadrados (6 a
+          12 millones de millas cuadradas); así, cada ave tiene más de un
+          kilómetro cuadrado a su disposición y no es sorprendente que rara vez
+          sean vistos fuera del mar. En Maine, se han unido localizadores GPS a
+          las patas de los frailecillos, almacenando información de su
+          localización. Las aves deben ser capturadas de nuevo para poder tener
+          acceso a la información, lo que dificulta la tarea. Se descubrió que
+          un ave había cubierto 4800 millas de océano en ocho meses, viajando al
+          norte del mar de Labrador y luego al sureste hasta la mitad del
+          Atlántico, antes de regresar a la tierra.
+        </p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          En aves de larga experiencia de vida con pequeño tamaño como el
+          frailecillo atlántico, la tasa de supervivencia de un adulto es un
+          factor importante que influye en el éxito de las especies. Solo el 5 %
+          de los frailecillos anillados que no pudieron aparecer de nuevo en la
+          colonia, lo hicieron en la época de reproducción. El resto se perdió
+          un tiempo entre el momento en que salieron de tierra en verano y el
+          momento en que regresaron la siguiente primavera. Las aves pasan el
+          invierno esparcidas en el océano, aunque los individuos de distintas
+          colonias tienen tendencia a pasar el invierno en distintas áreas. Se
+          sabe poco de su comportamiento y su dieta en el mar, pero no se
+          encontró ninguna correlación entre factores ambientales, como los
+          cambios de temperatura y su tasa de mortalidad. Una combinación de la
+          disponibilidad de comida en invierno y verano puede influir en la
+          supervivencia de las aves, dado que los individuos que comienzan en
+          invierno en condiciones pobres tienen menos probabilidad de sobrevivir
+          que aquellos con buenas condiciones.
+        </p>
+      </div>
+    </div>
+
+    <!-- ACCORDION 3 -->
+
+    <h2 id="accordion-flush-heading-3">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+        data-accordion-target="#accordion-flush-body-3"
+        aria-expanded="false"
+        aria-controls="accordion-flush-body-3"
+      >
+        <span>Comportamiento</span>
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"></path>
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-flush-body-3"
+      class="hidden"
+      aria-labelledby="accordion-flush-heading-3"
+    >
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          Los frailecillos atlánticos llevan existencias solitarias cuando se
+          encuentran en el mar y esta parte de sus vidas ha sido poco estudiada,
+          ya que la tarea de encontrar un ave en el mar es formidable. Cuando
+          está en el mar, el frailecillo atlántico se mueve como un corcho,
+          propulsándose a través del agua con poderosas embestidas de sus patas
+          y manteniéndose volteado hacia el viento, aunque aparentemente
+          descansan y duermen. Pasa mucho tiempo del día acicalándose para
+          mantener sus plumas ordenadas y esparce aceite de una glándula. El
+          suave plumaje bajo permanece seco y proporciona aislamiento térmico.
+          En común con otras aves marinas, la superficie de arriba es negra y la
+          de abajo es blanca. Esto permite el camuflaje ante depredadores aéreos
+          incapaces de observar al ave contra el fondo oscuro del agua y
+          atacantes submarinos que no los distinguen gracias a que se mezclan
+          con el brillante cielo por encima de las olas.
+        </p>
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          Cuando despega, el frailecillo atlántico golpea la superficie del agua
+          mientras bate sus alas, antes de lanzarse hacia el aire. Para
+          mantener el vuelo, las alas deben moverse rápidamente, varias veces
+          por segundo. El vuelo del ave es directo y bajo sobre la superficie
+          del agua y puede viajar a 80 km por hora. El aterrizaje es extraño; o
+          se estrella contra la cresta de una ola o, en aguas más tranquilas,
+          hace una bajada rápida. Mientras se encuentra en el mar, el
+          frailecillo atlántico lleva a cabo su muda anual. Las aves de tierra
+          pierden sus plumas primarias, un par a la vez, para poder seguir
+          volando, pero el frailecillo cambia todas las primarias de una sola
+          vez y deja de volar por completo un mes o dos. La muda, generalmente
+          tiene lugar entre enero y marzo, pero las aves jóvenes pueden perder
+          sus plumas con el año más avanzado.
+        </p>
+      </div>
+    </div>
+
+    <!-- IMAGES -->
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Papageitaucher_Fratercula_arctica.jpg/320px-Papageitaucher_Fratercula_arctica.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Atlantic_Puffin_Fratercula_arctica.jpg/220px-Atlantic_Puffin_Fratercula_arctica.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://static.inaturalist.org/photos/4292194/large.jpg"
+            alt=""
+          />
+        </div>
+        <!-- <div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwARUosIzWNxBmca4qsZXriRIdebJ6Hlv5GEPeH3curkHWyyWdl4zrKwDfq7dDR-BiByHxtRLlpM7e476ib1g1jxFv7d2rborwyOGaIHXYUjUVbda8600Oo2PYWwR_uhcYNgSrfj6lFmRq/s400/milano-real-milvus.jpg"
+							alt=""
+						/>
+					</div> -->
+      </div>
+    </div>
+    <a href="/" class="flex justify-center mt-4">
+      <button
+        type="button"
+        class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+      >
+        ¿Quires ver las demás mesas?
+      </button>
+    </a>
+  </div>
+</Layout>

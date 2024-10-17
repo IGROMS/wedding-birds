@@ -1,0 +1,282 @@
+---
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Cigüeña">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img src="./images/birds/Ciguena.png" alt="Cigüeña" class="max-h-80" />
+    </div>
+
+    <!-- TITLE -->
+
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Cigüeña
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">Ciconia ciconia</h2>
+    <div class="px-4 flex justify-between mt-4">
+      <!-- TAXONOMY -->
+
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Ciconiiformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Ciconiidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Ciconia</p>
+        </div>
+      </div>
+
+      <!-- CONSERVATION STATUS -->
+
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">
+          Estado de conservación
+        </h3>
+        <StatusButton title="lc" />
+      </div>
+    </div>
+
+    <!-- FIRST DESCRIPTION -->
+
+    <p class="px-3 mt-8 text-left">
+      La cigüeña blanca (Ciconia ciconia) es una especie de ave Ciconiiforme de
+      gran tamaño, perteneciente a la familia Ciconiidae. Su plumaje es
+      mayoritariamente blanco con negro en las alas, y las patas y el pico de
+      los adultos adquieren un color rojo. Mide un promedio de 100 y 115 cm
+      desde la punta del pico hasta el final de la cola, y sus alas pueden
+      llegar a tener una envergadura entre 155 y 215 cm. Las dos subespecies,
+      que son ligeramente diferentes por su tamaño, se aparean en Europa, el
+      noreste y sur de África y el suroeste de Asia. El 25 % de la población
+      mundial está concentrada en Polonia.
+    </p>
+  </main>
+
+  <div
+    id="accordion-flush"
+    data-accordion="collapse"
+    data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+    data-inactive-classes="text-gray-500 dark:text-gray-400"
+    class="px-3 text-left mb-4"
+  >
+    <!-- ACCORDION 1 -->
+
+    <h2 id="accordion-flush-heading-1">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+        data-accordion-target="#accordion-flush-body-1"
+        aria-expanded="false"
+        aria-controls="accordion-flush-body-4"
+      >
+        <span>Descripción</span>
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"></path>
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-flush-body-1"
+      class="hidden"
+      aria-labelledby="accordion-flush-heading-1"
+    >
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          Es un ave muy grande; una cigüeña adulta puede alcanzar una longitud
+          de 100-115 cm y una altura de pie de 100-125 cm. Puede alcanzar una
+          envergadura alar de 155-215 cm y un peso de 2,3-4,5 kg. Como todas las
+          cigüeñas, tiene patas largas, un cuello largo y un largo pico recto y
+          puntiagudo. Ambos sexos tienen una apariencia idéntica, aunque los
+          machos suelen ser más grandes que las hembras. Posee un plumaje
+          principalmente blanco, con negro en las plumas de vuelo y las
+          coberteras de las alas; el color negro se debe al pigmento melanina.
+          Las plumas del pecho son largas y peludas, formando un collar que se
+          utiliza en algunas exhibiciones de cortejo. El iris es marrón o gris,
+          y la piel periorbital es de color negro. El ave adulta tiene un pico
+          rojo brillante y patas rojas, cuya coloración se deriva de los
+          carotenoides en su alimentación. Estudios demostraron que en algunas
+          partes de España el pigmento se basa en astaxantina procedente de una
+          especie de cangrejo de río introducida (Procambarus clarkii), y los
+          colores brillantes rojos del pico aparecen incluso en los pichones, en
+          contraste con los colores más apagados de los picos de cigüeñas
+          blancas juveniles en otros lugares.
+        </p>
+      </div>
+    </div>
+
+    <!-- ACCORDION 2 -->
+
+    <h2 id="accordion-flush-heading-2">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+        data-accordion-target="#accordion-flush-body-2"
+        aria-expanded="false"
+        aria-controls="accordion-flush-body-2"
+      >
+        <span>Distribución y hábitat</span>
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"></path>
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-flush-body-2"
+      class="hidden"
+      aria-labelledby="accordion-flush-heading-2"
+    >
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          La subespecie nominal, C. c. ciconia, tiene una amplia distribución,
+          si bien disjunta, en Europa, el Norte de África y en algunas partes
+          del occidente de Asia. En Europa existen concentraciones en la
+          península ibérica y gran parte del centro y este de Europa, con un 25
+          % de la población mundial concentrada en Polonia, La población de la
+          subespecie asiatica contaba alrededor de mil cuatrocientos cincuenta
+          aves individuales y se distribuye en una región en Asia central entre
+          el mar de Aral y Xinjiang en el oeste de China. Se cree que la
+          población de Xinjiang se extinguió alrededor del año 1980. Las rutas
+          migratorias amplían el alcance de esta especie hasta muchas partes de
+          África y la India. Algunas poblaciones eligen la ruta migratoria del
+          este, que pasa a través del Medio Oriente hacia el este y centro de
+          África.
+        </p>
+      </div>
+    </div>
+
+    <!-- ACCORDION 3 -->
+
+    <h2 id="accordion-flush-heading-3">
+      <button
+        type="button"
+        class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+        data-accordion-target="#accordion-flush-body-3"
+        aria-expanded="false"
+        aria-controls="accordion-flush-body-3"
+      >
+        <span>Conservación</span>
+        <svg
+          data-accordion-icon
+          class="w-3 h-3 rotate-180 shrink-0"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5 5 1 1 5"></path>
+        </svg>
+      </button>
+    </h2>
+    <div
+      id="accordion-flush-body-3"
+      class="hidden"
+      aria-labelledby="accordion-flush-heading-3"
+    >
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">
+          La reducción en el número de cigüeñas blancas por la industrialización
+          y los cambios agrícolas (principalmente el drenaje de los humedales y
+          la conversión de praderas en cultivos tales como maíz) se inició en el
+          siglo xiv: la última cigüeña salvaje en Bélgica fue registrada en
+          1895, en Suecia en 1955, en Suiza en 1950 y en Holanda en 1991. Sin
+          embargo, la especie ha sido reintroducida en muchas regiones. En
+          1988 la IUCN la clasificó como una especie casi amenazada y desde 1994
+          como una especie bajo preocupación menor. Es también una de las
+          especies a las que se aplica el Acuerdo sobre la Conservación de Aves
+          Acuáticas Migratorias de África y Eurasia (AEWA). Las partes en el
+          acuerdo deben participar en una amplia gama de estrategias de
+          conservación descritas en un plan de acción detallado. El plan tiene
+          por objeto abordar cuestiones claves como la conservación de especies
+          y hábitats, la gestión de las actividades humanas, la investigación, y
+          la educación. Las amenazas incluyen la reducción continua de los
+          humedales, las colisiones con líneas eléctricas aéreas, el uso de
+          pesticidas persistentes (por ejemplo, DDT) para combatir las langostas
+          en África, así como la caza ilegal, sobre todo en las rutas de
+          migración y las zonas de invernada.
+        </p>
+      </div>
+    </div>
+
+    <!-- IMAGES -->
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Ciconia_ciconia_-Iglesia_de_San_Isidoro%2C_Ciguenas_en_el_campanario%2C_Salamanca%2C_Spain-18June2006.jpg/220px-Ciconia_ciconia_-Iglesia_de_San_Isidoro%2C_Ciguenas_en_el_campanario%2C_Salamanca%2C_Spain-18June2006.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/%D0%90%D0%B8%D1%81%D1%82%D1%8B_%D0%BD%D0%B0_%D0%B3%D0%BD%D0%B5%D0%B7%D0%B4%D0%B5_%28Ciconia_ciconia%29.jpg/220px-%D0%90%D0%B8%D1%81%D1%82%D1%8B_%D0%BD%D0%B0_%D0%B3%D0%BD%D0%B5%D0%B7%D0%B4%D0%B5_%28Ciconia_ciconia%29.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Stork_%28Palic%2C_Serbia%29.jpg/230px-Stork_%28Palic%2C_Serbia%29.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://www.desveda.info/wp-content/uploads/2019/04/%C2%BFConoces-el-ave-m%C3%A1s-peligrosa-del-mundo-El-Cigüeña-5.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <a href="/" class="flex justify-center mt-4">
+      <button
+        type="button"
+        class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+      >
+        ¿Quires ver las demás mesas?
+      </button>
+    </a>
+  </div>
+</Layout>
