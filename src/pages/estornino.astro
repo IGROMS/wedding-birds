@@ -1,0 +1,327 @@
+---
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Estornino">
+	<main class="md:px-96">
+		<div class="flex justify-center">
+			<img src="./images/birds/Estornino.png" alt="Estornino" class="max-h-80" />
+		</div>
+
+		<!-- TITLE -->
+
+		<h1
+			class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+		>
+			Estornino
+		</h1>
+		<h2 class="italic font-serif text-gray-600 text-center">Otus scops</h2>
+		<div class="px-4 flex justify-between mt-4">
+			<!-- TAXONOMY -->
+
+			<div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+					<p class="">Passeriformes</p>
+				</div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+					<p class="">Sturnidae</p>
+				</div>
+				<div class="flex">
+					<p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+					<p class="">Sturnus</p>
+				</div>
+			</div>
+
+			<!-- CONSERVATION STATUS -->
+
+			<div class="flex flex-col items-center">
+				<h3 class="dark:text-gray-400 mr- font-medium">
+					Estado de conservación
+				</h3>
+				<StatusButton title="lc" />
+			</div>
+		</div>
+
+		<!-- FIRST DESCRIPTION -->
+
+		<p class="px-3 mt-8 text-left">
+			El estornino pinto (Sturnus vulgaris), también conocido como estornino
+			europeo o estornino común, es una especie de ave paseriforme de la familia
+			Sturnidae nativa del Paleártico. Mide unos 20 cm de largo y tiene un
+			plumaje de color negro iridiscente, con un brillo púrpura o verde,
+			salpicado de blanco, sobre todo en el invierno. Las patas son rojizas, y
+			el pico es negro en el invierno y amarillo en el verano. A diferencia de
+			los adultos, las aves juveniles tienen un plumaje marrón. Es un ave
+			ruidosa, sobre todo en perchas comunitarias y otras situaciones gregarias,
+			y tiene un canto variado, pero poco musical. Tiene la capacidad de imitar
+			los sonidos de su entorno e incluso aprenderlos. Su talento para la
+			imitación vocal ha sido notado en obras literarias como el Mabinogion y
+			las obras de Plinio el Viejo y William Shakespeare.
+		</p>
+		<p class="px-3 mt-8 text-left">
+			Forma grandes bandadas que pueden ser beneficiosas para la agricultura por
+			combatir plagas, ya que consumen grandes cantidades de insectos y otros
+			invertebrados. Sin embargo, los mismos estorninos pintos pueden llegar a
+			ser considerados plaga, cuando acaban con cultivos de frutas y
+			desentierran brotes agrícolas. También pueden representar una molestia
+			cuando las bandadas pernoctan en cables o postes urbanos, por el volumen
+			del ruido y de los excrementos que producen. Ciertas poblaciones, en
+			particular las que fueron introducidas, han sido sometidas a una serie de
+			medidas para contener o disminuir su crecimiento, como la eliminación
+			selectiva, pero estas medidas han tenido poco éxito, excepto en Australia
+			Occidental. En algunas partes del norte y oeste de Europa las poblaciones
+			disminuyeron desde la década de 1980 debido a cambios agrícolas y la
+			consiguiente reducción en el número de invertebrados en los pastizales,
+			los que son un alimento importante para el desarrollo de los polluelos. A
+			pesar de ello, no se cree que la abundante población mundial esté
+			disminuyendo de manera significativa y el estornino pinto sigue siendo
+			clasificado como una especie bajo preocupación menor por la Unión
+			Internacional para la Conservación de la Naturaleza (UICN).
+		</p>
+
+		<div
+			id="accordion-flush"
+			data-accordion="collapse"
+			data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+			data-inactive-classes="text-gray-500 dark:text-gray-400"
+			class="px-3 text-left mb-4"
+		>
+			<!-- ACCORDION 1 -->
+
+			<h2 id="accordion-flush-heading-1">
+				<button
+					type="button"
+					class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+					data-accordion-target="#accordion-flush-body-1"
+					aria-expanded="false"
+					aria-controls="accordion-flush-body-4"
+				>
+					<span>Descripción</span>
+					<svg
+						data-accordion-icon
+						class="w-3 h-3 rotate-180 shrink-0"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 10 6"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5 5 1 1 5"></path>
+					</svg>
+				</button>
+			</h2>
+			<div
+				id="accordion-flush-body-1"
+				class="hidden"
+				aria-labelledby="accordion-flush-heading-1"
+			>
+				<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						El estornino pinto mide de 19 a 23 cm de largo, y tiene una
+						envergadura alar de 31 a 44 cm y un peso de 58 a 101 g. Entre las
+						medidas estándar, la cuerda alar es de 11,8 a 13,8 cm, la cola de
+						5,8 a 6,8 cm, el culmen de 2,5 a 3,2 cm y el tarso de 2,7 a 3,2
+						cm. El plumaje es de color negro iridiscente, con un brillo
+						púrpura o verde, salpicado de blanco, sobre todo en el invierno. Las
+						partes inferiores de los machos adultos son más manchadas que las de
+						las hembras adultas en un momento dado del año. Las plumas de la
+						garganta de los machos son largas y sueltas y se utilizan en las
+						exhibiciones de cortejo, mientras que las de las hembras son más
+						pequeñas y más puntiagudas. Las patas son robustas y de color
+						rosado-rojo o gris-rojo. El pico es estrecho, cónico, con una punta
+						afilada; en el invierno es de color marrón-negro, pero en el verano,
+						las hembras tienen picos de color amarillo-limón, mientras que los
+						machos tienen picos de color amarillo con una base azul-gris. La
+						muda ocurre una vez al año, a finales del verano después de terminar
+						la temporada de reproducción; las plumas nuevas se destacan por sus
+						puntas blancas (plumas del pecho) o ante (plumas de las alas y la
+						espalda), lo que produce un aspecto moteado. La reducción de las
+						manchas en la época de reproducción se obtiene principalmente por el
+						desgaste normal de las puntas blancas de las plumas. El plumaje de
+						las aves juveniles tiene un color gris-marrón que se convierte en el
+						plumaje adulto al alcanzar el primer invierno, aunque a menudo
+						conserva algo del plumaje marrón juvenil, especialmente en la
+						cabeza.
+					</p>
+				</div>
+			</div>
+
+			<!-- ACCORDION 2 -->
+
+			<h2 id="accordion-flush-heading-2">
+				<button
+					type="button"
+					class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+					data-accordion-target="#accordion-flush-body-2"
+					aria-expanded="false"
+					aria-controls="accordion-flush-body-2"
+				>
+					<span>Comportamiento y ecología</span>
+					<svg
+						data-accordion-icon
+						class="w-3 h-3 rotate-180 shrink-0"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 10 6"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5 5 1 1 5"></path>
+					</svg>
+				</button>
+			</h2>
+			<div
+				id="accordion-flush-body-2"
+				class="hidden"
+				aria-labelledby="accordion-flush-heading-2"
+			>
+				<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						El estornino pinto es una especie muy gregaria, especialmente en el
+						otoño e invierno. Aunque el tamaño de las bandadas es muy variable,
+						pueden formarse bandadas muy grandes y ruidosas cerca de los
+						dormideros. Se cree que estas densas concentraciones de aves son una
+						defensa contra los ataques de rapaces como el halcón peregrino o
+						gavilán. En vuelo, las bandadas forman una apretada formación
+						esférica, expandiéndose y contrayéndose y cambiando de forma con
+						frecuencia, aparentemente sin ningún tipo de líder. Cada ave cambia
+						su curso y su velocidad como resultado del movimiento de sus vecinos
+						más cercanos. Pueden formarse concentraciones muy grandes en los
+						dormideros, en casos excepcionales hasta 1,5 millones de aves; estos
+						pueden formarse en centros urbanos, bosques o cañaverales, y llegan
+						a causar problemas por la cantidad de excrementos que producen.
+						Estos pueden acumular hasta un espesor de 30 cm, y matar a los
+						árboles por la concentración de productos químicos que contienen. En
+						cantidades menores, los excrementos actúan como fertilizante; por lo
+						tanto los administradores de zonas boscosas a veces tratan de
+						desplazar los dormideros de un área del bosque a otro para
+						beneficiarse de la mejora del suelo y evitar grandes depósitos
+						tóxicos.
+					</p>
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						Grandes bandadas de más de un millón de estorninos pintos pueden
+						observarse en la primavera, antes de la puesta del sol, en el
+						suroeste de Jutlandia, Dinamarca, sobre los pantanos de los
+						municipios de Tønder y Esbjerg entre Tønder y Ribe. Se reúnen en
+						marzo hasta mediados de abril, cuando las aves que anidan en el
+						norte de Escandinavia comienzan la migración hacia sus zonas de
+						reproducción. Su comportamiento de enjambre crea formas complejas
+						recortadas contra el cielo, un fenómeno conocido localmente como
+						sort sol («sol negro»). En ciertas zonas del Reino Unido se forman
+						bandadas de hasta cincuenta mil estorninos pintos en pleno invierno,
+						poco antes de la puesta del sol. Estas bandadas se conocen
+						localmente como murmurations («murmullos»).
+					</p>
+				</div>
+			</div>
+
+			<!-- ACCORDION 3 -->
+
+			<!-- <h2 id="accordion-flush-heading-3">
+				<button
+					type="button"
+					class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+					data-accordion-target="#accordion-flush-body-3"
+					aria-expanded="false"
+					aria-controls="accordion-flush-body-3"
+				>
+					<span>Comportamiento</span>
+					<svg
+						data-accordion-icon
+						class="w-3 h-3 rotate-180 shrink-0"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 10 6"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5 5 1 1 5"></path>
+					</svg>
+				</button>
+			</h2>
+			<div
+				id="accordion-flush-body-3"
+				class="hidden"
+				aria-labelledby="accordion-flush-heading-3"
+			>
+				<div class="py-5 border-b border-gray-200 dark:border-gray-700">
+					<p class="mb-2 text-gray-500 dark:text-gray-400">
+						Es un animal estrictamente nocturno. Realiza grandes movimientos
+						migratorios, pasando los inviernos en el África subsahariana y
+						desplazándose hacia Europa, llegando al centro de la España
+						peninsular hacia el equinoccio de primavera (en la sabiduría popular
+						se le reconoce, a pesar de no poder observarlo debido a su hábito
+						nocturno, por escuchar su ulular cuando el invierno concluye y los
+						días empiezan a ser templados). Una vez establecido en el sitio
+						elegido, permanece indefectiblemente en el mismo lugar para
+						reproducirse y criar a los pollos hacia el verano, migrando a
+						latitudes inferiores al terminar el otoño. A menudo utiliza los
+						agujeros hechos en los troncos de los árboles por el pito real
+						(Picus viridis) para establecer su nido, pero tampoco desprecia las
+						cajas nido.
+					</p>
+				</div>
+			</div> -->
+
+			<!-- IMAGES -->
+
+			<div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+				<div class="grid gap-4">
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/European_Starling_2006.jpg/230px-European_Starling_2006.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://www.club-caza.com/img/article/est.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+				<div class="grid gap-4">
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Birdsinging03182006.JPG/220px-Birdsinging03182006.JPG"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="h-auto max-w-full rounded-lg"
+							src="https://www.avesdeuruguay.com/estornino.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+			<a href="/" class="flex justify-center mt-4">
+				<button
+					type="button"
+					class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+				>
+					¿Quires ver las demás mesas?
+				</button>
+			</a>
+		</div>
+	</main>
+</Layout>
