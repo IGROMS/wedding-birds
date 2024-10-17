@@ -1,0 +1,305 @@
+---
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Jilguero europeo">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img
+        src="./images/birds/Jilguero.png"
+        alt="Jilguero europeo"
+        class="max-h-80"
+      />
+    </div>
+
+    <!-- TITLE -->
+
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Jilguero europeo
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">
+      Carduelis carduelis
+    </h2>
+    <div class="px-4 flex justify-between mt-4">
+      <!-- TAXONOMY -->
+
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Passeriformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Fringillidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Carduelis</p>
+        </div>
+      </div>
+
+      <!-- CONSERVATION STATUS -->
+
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">
+          Estado de conservación
+        </h3>
+        <StatusButton title="lc" />
+      </div>
+    </div>
+
+    <!-- FIRST DESCRIPTION -->
+
+    <p class="px-3 mt-8 text-left">
+      El jilguero europeo, jilguero común o cardelina (Carduelis carduelis) es
+      una especie de ave paseriforme de la familia de los fringílidos que habita
+      en el Paleártico occidental, tanto en Europa como en el Norte de África y
+      parte de Asia Occidental. En España había en 2003 alrededor de 2,8
+      millones de ejemplares. Es un ave granívora, que se alimenta de semillas
+      de girasol, trigo, algunos insectos en la estación de cría y sobre todo de
+      las semillas de los cardos. Desde tiempos antiguos es criado en cautividad
+      debido a su alegre canto, el cual está compuesto por trinos que para
+      algunos autores son parecidos a los de los canarios. Se le conocen dos
+      códigos de canto a nivel de concurso en España, el canto limpio y el canto
+      campero: de entre todas sus subespecies, el parva es el mejor dotado para
+      el canto, según la gran mayoría de aficionados al canto del jilguero.
+    </p>
+    <p class="px-3 mt-8 text-left">
+      Antonio Vivaldi compuso un concierto para flauta subtitulado Il Gardellino
+      (el Jilguero) RV 428 (Op. 10 n ° 3), en el que el solista imita
+      repetidamente su canto.
+    </p>
+
+    <div
+      id="accordion-flush"
+      data-accordion="collapse"
+      data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+      data-inactive-classes="text-gray-500 dark:text-gray-400"
+      class="px-3 text-left mb-4"
+    >
+      <!-- ACCORDION 1 -->
+
+      <h2 id="accordion-flush-heading-1">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-1"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-4"
+        >
+          <span>Descripción</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-1"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-1"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Presenta una longitud de 11-13,5 cm, una envergadura de 21-25,5 cm,
+            un peso de 14-19 g y una longevidad de siete a diez años (en
+            cautividad) El jilguero europeo presenta una cabeza tricolor con
+            máscara facial roja y alas negras con franja amarilla.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El plumaje adulto se caracteriza por una cabeza muy distintiva y
+            conspicua, con aspecto tricolor, máscara facial roja, y dibujo
+            cefálico blanco y negro. El pico es típico y adaptado a su
+            alimentación. Cónico, esbelto, afilado, de color pálido. Por otra
+            parte, el cuerpo en la parte anterior es blanquecino, bordeado de
+            ocre, mientras que la parte posterior marronácea. El ala muy
+            distintiva y conspicua, tanto con el ave posada, como en vuelo.
+            Negra, con ancha franja alar amarilla; manchas blancas en la punta
+            de las rémiges de tamaño variable, en función del desgaste. La cola
+            es negra, escotada, presentando rectrices con puntas blancas.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 2 -->
+
+      <h2 id="accordion-flush-heading-2">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-2"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-2"
+        >
+          <span>Distribución y hábitat</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-2"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-2"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El jilguero europeo se distribuye a lo largo del paleártico
+            occidental. Suele habitar lindes de bosques, sotos, campiñas, zonas
+            agrícolas, parques, jardines, huertos, frutaledas y, en general
+            cualquier zona herbácea, en especial si existe abundancia de cardos
+            (alimento predilecto de la especie); la clave es presencia mínima de
+            arbolado. Cría sin dificultades en pueblos y ciudades.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Muestra predilección por ambientes calurosos, siendo menos frecuente
+            observarlo a medida que aumenta la altitud. Ha sido citado en los
+            Alpes suizos a 2400 m s. n. m.; en los Pirineos catalanes a 2000 m
+            s. n. m., y en Sierra Nevada a 1850 m s. n. m.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Su predilección por las plantas ruderales, especialmente cardos y
+            centaureas, explica las altas abundancias de jilgueros en vegas y
+            olivares, hábitats que aportan árboles para emplazar el nido, y
+            terrenos despejados donde buscar semillas. En migración resulta
+            ubicuo. En invierno también frecuenta yermos y otras zonas abiertas
+            aunque no estén arboladas.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 3 -->
+
+      <h2 id="accordion-flush-heading-3">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-3"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-3"
+        >
+          <span>Comportamiento</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-3"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-3"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El jilguero europeo se comporta como parcialmente migrador. Las
+            poblaciones norteñas migran al sur; los cuarteles de invierno se
+            sitúan en la zona mediterránea. Las poblaciones meridionales pueden
+            ser sedentarias, errantes, e incluso migradoras hacia el norte de
+            África. La migración es diurna, en grupos más o menos numerosos. El
+            paso migratorio es prolongado; el grueso de la migración otoñal se
+            produce entre septiembre y noviembre; el de la primavera se produce
+            entre febrero y mayo.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            En regiones como España se considera un migrador parcial, recibiendo
+            invernantes procedentes de Centroeuropa; el paso otoñal se produce
+            sobre todo en octubre y noviembre, y la vuelta transcurre entre
+            marzo y mayo.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Los individuos ibéricos parecen abandonar mayoritariamente muchas de
+            sus localidades de cría para desplazarse al norte de África, dando
+            lugar a una espectacular concentración otoñal en el estrecho de
+            Gibraltar, donde resulta ser el fringílido más abundante en
+            migración al unirse con migradores más norteños; en este sentido se
+            han citado altísimas densidades al sur de Cádiz del orden de sesenta
+            y cinco aves por cada diez hectáreas.
+          </p>
+        </div>
+      </div>
+
+      <!-- IMAGES -->
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Carduelis_carduelis_1_%28Marek_Szczepanek%29_%28cropped%29.jpg/250px-Carduelis_carduelis_1_%28Marek_Szczepanek%29_%28cropped%29.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/%D0%A9%D0%B5%D0%B3%D0%BE%D0%BB_%D1%87%D0%B5%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D1%8B%D0%B9_%D1%86%D0%B2%D0%B5%D1%82%D0%BE%D1%87%D0%BA%D0%B8_%D0%B8%D0%B2%D1%8B_%D1%89%D0%B8%D0%BF%D0%BB%D0%B5%D1%82_%28Carduelis_carduelis%29%2C_%D0%9A%D1%80%D1%8B%D0%BB%D0%B0%D1%82%D1%81%D0%BA%D0%B8%D0%B5_%D1%85%D0%BE%D0%BB%D0%BC%D1%8B.jpg/220px-%D0%A9%D0%B5%D0%B3%D0%BE%D0%BB_%D1%87%D0%B5%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D1%8B%D0%B9_%D1%86%D0%B2%D0%B5%D1%82%D0%BE%D1%87%D0%BA%D0%B8_%D0%B8%D0%B2%D1%8B_%D1%89%D0%B8%D0%BF%D0%BB%D0%B5%D1%82_%28Carduelis_carduelis%29%2C_%D0%9A%D1%80%D1%8B%D0%BB%D0%B0%D1%82%D1%81%D0%BA%D0%B8%D0%B5_%D1%85%D0%BE%D0%BB%D0%BC%D1%8B.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/European_Goldfinch_Jispa_Himachal_Pradesh_2013.jpg/220px-European_Goldfinch_Jispa_Himachal_Pradesh_2013.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Carcar.jpg/220px-Carcar.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <a href="/" class="flex justify-center mt-4">
+        <button
+          type="button"
+          class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+        >
+          ¿Quires ver las demás mesas?
+        </button>
+      </a>
+    </div>
+  </main>
+</Layout>

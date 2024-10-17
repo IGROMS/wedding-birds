@@ -1,0 +1,275 @@
+---
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Mosquero real">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img
+        src="./images/birds/Mosquero.png"
+        alt="Mosquero real"
+        class="max-h-80"
+      />
+    </div>
+
+    <!-- TITLE -->
+
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Mosquero real
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">
+      Onychorhynchus coronatus
+    </h2>
+    <div class="px-4 flex justify-between mt-4">
+      <!-- TAXONOMY -->
+
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Passeriformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Onychorhynchidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Onychorhynchus</p>
+        </div>
+      </div>
+
+      <!-- CONSERVATION STATUS -->
+
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">
+          Estado de conservación
+        </h3>
+        <StatusButton title="lc" />
+      </div>
+    </div>
+
+    <!-- FIRST DESCRIPTION -->
+
+    <p class="px-3 mt-8 text-left">
+      El mosquero real (en México y Costa Rica) (Onychorhynchus coronatus),
+      también denominado atrapamoscas real, atrapamoscas real amazónico (en
+      Colombia y Venezuela), cazamoscas real (en Honduras), mosquero real (en
+      Guatemala) o cazamoscas real norteño (en Nicaragua), es una especie de ave
+      paseriforme de la familia Onychorhynchidae —aunque situado en Tityridae o
+      en Oxyruncidae dependiendo de la clasificación adoptada—. Es nativo de
+      México, América Central y América del Sur.
+    </p>
+
+    <div
+      id="accordion-flush"
+      data-accordion="collapse"
+      data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+      data-inactive-classes="text-gray-500 dark:text-gray-400"
+      class="px-3 text-left mb-4"
+    >
+      <!-- ACCORDION 1 -->
+
+      <h2 id="accordion-flush-heading-1">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-1"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-4"
+        >
+          <span>Taxonomía</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-1"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-1"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Cada uno de los taxones geográficamente o de plumaje distintos
+            dentro de Onychorhynchus han sido originalmente descritos como
+            especies separadas, pero han sido generalmente unidos en una única
+            especie, la presente, por diversos autores, aunque diversas
+            sugestiones han sido hechas en relación con separaciones dentro del
+            género con algunos autores considerando cuatro especies diferentes
+            (O. coronatus, O. swainsoni, O. mexicanus y O. occidentalis) como
+            Ridgely & Tudor (2009) y versiones anteriores del IOC y Aves del
+            Mundo (HBW) y Birdlife International (BLI). Sin embargo, las
+            vocalizaciones parecen ser similares para todos con excepción de O.
+            swainsoni del sureste de Brasil; segundo los estudios de Harvey et
+            al. (2020) la divergencia más profunda sería entre O. swainsoni y
+            los otros taxones. Con base en estas evidencias, tanto el IOC (que
+            reconocía cuatro especies) como Clements/eBird (que reconocía solo
+            una) desde el año 2023 reconocen la existencia de dos especies
+            separadas (O. coronatus y O. swainsoni). Los recientes y posteriores
+            estudios de Reyes et al. (2023) no solamente refuerzan esta antigua
+            divergencia como también sugieren otras futuras separaciones.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El nombre genérico masculino «Onychorhynchus» se compone de las
+            palabras del griego «ονυξ onux, ονυχος onukhos» que significa
+            'garra', y «ῥυγχος rhunkhos» que significa 'pico'; y el nombre de la
+            especie coronatus, en latín significa 'coronado'.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 2 -->
+
+      <h2 id="accordion-flush-heading-2">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-2"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-2"
+        >
+          <span>Descripción</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-2"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-2"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El mosquero real mide entre 15 y 17 cm de longitud. Sus partes
+            superiores son principalmente pardo grisáceas con las motas de color
+            crema sobre las coberteras de las alas. Su garganta es blanquecina y
+            el resto de sus partes inferiores de su cuerpo, al igual que su
+            obispillo y cola son de color ocre amarillento. El macho tiene un
+            característico penacho en la cabeza en forma de abanico, que al
+            desplegarse muestra plumas rojas con bordes superiores negros con
+            irisaciones azules y algunas motas negras. En las hembras el rojo se
+            sustituye por un color amarillo anaranjado.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 3 -->
+
+      <!-- <h2 id="accordion-flush-heading-3">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-3"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-3"
+        >
+          <span>Pesca con Mosquero real</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-3"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-3"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            En ciertas localidades de Asia, especialmente en partes de Japón y
+            China se utiliza al Mosquero real para la pesca. Se les ata un
+            cordel en la parte inferior del cuello de forma que puedan capturar
+            un pez, pero no tragarlo. El pescador, una vez que el Mosquero real
+            ha capturado un pez, se lo extrae (ya que ha quedado aprisionado en
+            su garganta) y lo dispone para efectuar nuevas capturas.
+          </p>
+        </div>
+      </div> -->
+
+      <!-- IMAGES -->
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Onychorhynchus_coronatus_126032798.jpg/240px-Onychorhynchus_coronatus_126032798.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Onychorhynchus_coronatus_-_Amazonian_Royal_Flycatcher.JPG/280px-Onychorhynchus_coronatus_-_Amazonian_Royal_Flycatcher.JPG"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://www.espol.edu.ec/sites/default/files/ave2.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/608248211/320"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <a href="/" class="flex justify-center mt-4">
+        <button
+          type="button"
+          class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+        >
+          ¿Quires ver las demás mesas?
+        </button>
+      </a>
+    </div>
+  </main>
+</Layout>

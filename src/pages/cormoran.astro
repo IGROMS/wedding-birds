@@ -1,0 +1,274 @@
+---
+import StatusButton from "../components/StatusButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Cormorán">
+  <main class="md:px-96">
+    <div class="flex justify-center">
+      <img src="./images/birds/Cormoran.png" alt="Cormorán" class="max-h-80" />
+    </div>
+
+    <!-- TITLE -->
+
+    <h1
+      class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
+    >
+      Cormorán
+    </h1>
+    <h2 class="italic font-serif text-gray-600 text-center">
+      Carduelis carduelis
+    </h2>
+    <div class="px-4 flex justify-between mt-4">
+      <!-- TAXONOMY -->
+
+      <div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
+          <p class="">Suliformes</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
+          <p class="">Phalacrocoracidae</p>
+        </div>
+        <div class="flex">
+          <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
+          <p class="">Phalacrocorax</p>
+        </div>
+      </div>
+
+      <!-- CONSERVATION STATUS -->
+
+      <div class="flex flex-col items-center">
+        <h3 class="dark:text-gray-400 mr- font-medium">
+          Estado de conservación
+        </h3>
+        <StatusButton title="lc" />
+      </div>
+    </div>
+
+    <!-- FIRST DESCRIPTION -->
+
+    <p class="px-3 mt-8 text-left">
+      Phalacrocorax (del griego φαλακρός [falakrós] 'calvo', y κόραξ [kórax],
+      'cuervo') es un género de aves suliformes perteneciente a la familia
+      Phalacrocoracidae. Sus miembros son denominados comúnmente cormoranes. Son
+      aves acuáticas que capturan peces zambulléndose bajo el agua.
+    </p>
+
+    <div
+      id="accordion-flush"
+      data-accordion="collapse"
+      data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+      data-inactive-classes="text-gray-500 dark:text-gray-400"
+      class="px-3 text-left mb-4"
+    >
+      <!-- ACCORDION 1 -->
+
+      <h2 id="accordion-flush-heading-1">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-1"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-4"
+        >
+          <span>Descripción</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-1"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-1"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Se alimentan exclusivamente de los peces que capturan bajo el agua.
+            Se impulsan principalmente con las patas y pueden zambullirse
+            durante más de un minuto, alcanzando una profundidad de unos 10 m. A
+            diferencia de la mayoría de las aves acuáticas, sus plumas no son
+            completamente impermeables, por lo que, al mojarse, éstas aumentan
+            de peso, lo que les permite hundirse más y bucear con facilidad. Una
+            vez en tierra, extienden las alas para secarlas. Además, regulan el
+            volumen de sus sacos aéreos.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Los cormoranes utilizan una estrategia de caza que se conoce como
+            «pesca en grupo»: se sumergen en bandadas y colaboran para rodear a
+            los cardúmenes de peces y hacer así más fácil su captura. Son aves
+            migratorias y se desplaza buscando áreas con mayor abundancia de
+            peces, siguiendo las corrientes marinas y fluviales. Permanecen en
+            los sitios elegidos solo de manera temporal, por períodos variables,
+            para alimentarse y reproducirse.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El cormorán grande (Phalacrocorax carbo) es con seguridad la especie
+            más extendida. El cormorán grande vive en lagos y estuarios, así
+            como en las costas, y construye su nido en acantilados o en árboles.
+            Alcanza hasta 90 cm de largo, y se lo puede encontrar en aguas
+            dulces y costas de todo el mundo.
+          </p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Se ha estudiado que este cormorán oye bajo el agua bastante bien,
+            con umbrales auditivos similares a los de focas y ballenas dentadas
+            en la banda de frecuencias de 1-4 kHz. Esto sugiere que estas aves
+            (y posiblemente también otras aves acuáticas) han desarrollado
+            adaptaciones especiales para la audición subacuática, habilidad que
+            les ayuda en la caza practicada de manera gregaria junto a otros de
+            su especie, como también en la búsqueda de sus presas y en la
+            detección oportuna del peligro (por ejemplo, el acercamiento de sus
+            depredadores).
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 2 -->
+
+      <h2 id="accordion-flush-heading-2">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-2"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-2"
+        >
+          <span>Taxonomía</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-2"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-2"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            En el pasado el género Phalacrocorax incluía todas las especies de
+            la familia. Muchas de ellas se repartieron por los géneros
+            Leucocarbo y Microcarbo. En la actualidad el género contiene 22
+            especies.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACCORDION 3 -->
+
+      <h2 id="accordion-flush-heading-3">
+        <button
+          type="button"
+          class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+          data-accordion-target="#accordion-flush-body-3"
+          aria-expanded="false"
+          aria-controls="accordion-flush-body-3"
+        >
+          <span>Pesca con cormorán</span>
+          <svg
+            data-accordion-icon
+            class="w-3 h-3 rotate-180 shrink-0"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5 5 1 1 5"></path>
+          </svg>
+        </button>
+      </h2>
+      <div
+        id="accordion-flush-body-3"
+        class="hidden"
+        aria-labelledby="accordion-flush-heading-3"
+      >
+        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            En ciertas localidades de Asia, especialmente en partes de Japón y
+            China se utiliza al cormorán para la pesca. Se les ata un cordel
+            en la parte inferior del cuello de forma que puedan capturar un pez,
+            pero no tragarlo. El pescador, una vez que el cormorán ha capturado
+            un pez, se lo extrae (ya que ha quedado aprisionado en su garganta)
+            y lo dispone para efectuar nuevas capturas.
+          </p>
+        </div>
+      </div>
+
+      <!-- IMAGES -->
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Cuervo_marino_o_Cormor%C3%A1n.jpg/220px-Cuervo_marino_o_Cormor%C3%A1n.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/PhalacrocoraxAuritus_1883.JPG/220px-PhalacrocoraxAuritus_1883.JPG"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Phalacrocorax_aristotelis_2_%28Martin_Mecnarowski%29.jpg/220px-Phalacrocorax_aristotelis_2_%28Martin_Mecnarowski%29.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Phalacrocorax_carbo_Austins_Ferry_1.jpg/250px-Phalacrocorax_carbo_Austins_Ferry_1.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <a href="/" class="flex justify-center mt-4">
+        <button
+          type="button"
+          class="py-2.5 px-5 me-2 mb-14 mt-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100"
+        >
+          ¿Quires ver las demás mesas?
+        </button>
+      </a>
+    </div>
+  </main>
+</Layout>

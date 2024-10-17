@@ -4,10 +4,14 @@ import StatusButton from "../components/StatusButton.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Grulla coronada">
+<Layout title="Grulla imperial">
   <main class="md:px-96">
     <div class="flex justify-center">
-      <img src="./images/Home/urogallo.png" alt="Grulla coronada" />
+      <img
+        src="./images/birds/Grulla.png"
+        alt="Grulla coronada"
+        class="max-h-80"
+      />
     </div>
 
     <!-- TITLE -->
@@ -15,26 +19,24 @@ import Layout from "../layouts/Layout.astro";
     <h1
       class="mt-6 text-2xl tracking-tight font-extrabold text-yellow-900 font-serif text-center"
     >
-      Grulla coronada
+      Grulla imperial
     </h1>
-    <h2 class="italic font-serif text-gray-600 text-center">
-      Balearica regulorum
-    </h2>
+    <h2 class="italic font-serif text-gray-600 text-center">Ardea purpurea</h2>
     <div class="px-4 flex justify-between mt-4">
       <!-- TAXONOMY -->
 
       <div>
         <div class="flex">
           <p class="dark:text-gray-400 mr-2 font-medium">Orden:</p>
-          <p class="">Gruiformes</p>
+          <p class="">Pelecaniformes</p>
         </div>
         <div class="flex">
           <p class="dark:text-gray-400 mr-2 font-medium">Familia:</p>
-          <p class="">Gruidae</p>
+          <p class="">Ardeidae</p>
         </div>
         <div class="flex">
           <p class="dark:text-gray-400 mr-2 font-medium">Género:</p>
-          <p class="">Balearica</p>
+          <p class="">Ardea</p>
         </div>
       </div>
 
@@ -44,16 +46,17 @@ import Layout from "../layouts/Layout.astro";
         <h3 class="dark:text-gray-400 mr- font-medium">
           Estado de conservación
         </h3>
-        <StatusButton title="en"/>
+        <StatusButton title="lc" />
       </div>
     </div>
 
     <!-- FIRST DESCRIPTION -->
 
     <p class="px-3 mt-8 text-left">
-      La grulla coronada cuelligrís (Balearica regulorum) es un ave gruiforme de
-      la familia Gruidae. Habita comúnmente en la sabana africana al sur del
-      Sahara, aunque suele anidar en hábitats más húmedos.
+      La grulla imperial (Ardea purpurea) es una especie de ave pelecaniforme de
+      la familia Ardeidae propia del África subsahariana, el sur, centro y este
+      de Europa, y Asia meridional y oriental. Es un ave acuática pescadora que
+      habita en humedales con aguas someras y vegetación densa circundante.
     </p>
 
     <div
@@ -73,7 +76,7 @@ import Layout from "../layouts/Layout.astro";
           aria-expanded="false"
           aria-controls="accordion-flush-body-4"
         >
-          <span>Características</span>
+          <span>Descripción</span>
           <svg
             data-accordion-icon
             class="w-3 h-3 rotate-180 shrink-0"
@@ -98,8 +101,30 @@ import Layout from "../layouts/Layout.astro";
       >
         <div class="py-5 border-b border-gray-200 dark:border-gray-700">
           <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Sus grandes manchas alares blancas sobre el plumaje gris son
-            visibles durante el vuelo y la exhibición.
+            La grulla imperial es un ave de gran tamaño, que mide 78-97 cm de
+            largo, con una altura de 70 a 94 cm y una envergadura lar de 120–152
+            cm. Sin embargo es muy esbelta, y para su tamaño solo pesa entre 0,5
+            y 1,35 kg. Es un poco más pequeña que la grulla real, de la que
+            además puede distinguirse por su plumaje más de tonos pardo rojizos
+            de sus laterales, y en los adultos su espalda gris más oscura. Los
+            adultos de grulla imperial tienen la frente y el píleo negros, y una
+            lista oscura les recorre la parte posterior del cuello desde la
+            espalda hasta la nuca, donde les cuelga una pequeña cresta. Esta
+            cresta posterior es más pequeña que la de la grulla real y no
+            sobrepasa los 140 cm. los laterales de su cabeza y cuello son de
+            color crema rojizo, con una lista oscura a ambos lados y que recorre
+            todo el cuello. Su manto es parduzco y las plumas de parte superior
+            de la zona escapular son alargadas, pero no las de la parte
+            inferior. El resto de sus partes superiores son de un color gris
+            parduzco, incluida la cola. La parte frontal de su cuello es más
+            clara que los laterales y tiene algunas plumas largas en la base del
+            cuello que están veteadas en blanco, castaño y negro. Su pecho es
+            castaño rojizo con los laterales negruzcos, y su vientre y
+            coberteras inferiores de la cola son negros. Su largo pico es
+            amarillo parduzco, y es recto y puntiagudo y de tonos más intensos
+            en los adultos en la época de cría. El iris de sus ojos es amarillo
+            y sus patas son parduzcas en la parte frontal y amarillentas por
+            detrás.
           </p>
         </div>
       </div>
@@ -139,17 +164,21 @@ import Layout from "../layouts/Layout.astro";
       >
         <div class="py-5 border-b border-gray-200 dark:border-gray-700">
           <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Habita en pantanos, donde se alimenta de grandes insectos, ranas y
-            sapos, cereales y otros vegetales. Vuela pesadamente, con el cuello
-            y las patas algo caídos, y descansa en los árboles. Las parejas se
-            exhiben con una danza a saltos y su fuerte reclamo a dos notas.
+            La grulla imperial se clasifica en el género Ardea, perteneciente a
+            la familia de las grullas, Ardeidae. A su vez, las grullas se
+            clasifican en el orden Pelecaniformes, junto a otras cuatro familias
+            de aves acuáticas: Pelecanidae (pelícanos), Threskiornithidae (ibis
+            y espátulas), Balaenicipitidae (picozapato) y Scopidae (ave
+            martillo). La grulla imperial como la mayoría de las grullas
+            actuales pertenece a la subfamilia Ardeinae, que incluye a las
+            grullas típicas (Ardea), garcillas, garcitas, martinetes y afines.
           </p>
         </div>
       </div>
 
       <!-- ACCORDION 3 -->
 
-      <h2 id="accordion-flush-heading-3">
+      <!-- <h2 id="accordion-flush-heading-3">
         <button
           type="button"
           class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
@@ -192,11 +221,11 @@ import Layout from "../layouts/Layout.astro";
             crestada sudafricana), que anida desde Angola hasta Sudáfrica.
           </p>
         </div>
-      </div>
+      </div> -->
 
       <!-- ACCORDION 4 -->
 
-      <h2 id="accordion-flush-heading-4">
+      <!-- <h2 id="accordion-flush-heading-4">
         <button
           type="button"
           class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
@@ -231,49 +260,49 @@ import Layout from "../layouts/Layout.astro";
           <p class="mb-2 text-gray-500 dark:text-gray-400">
             Aparece en el escudo y la bandera nacional de Uganda.
           </p>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">El canto de
-            esta ave fue usado para crear el sonido y vocalizaciones de los
-            raptores en la película Jurassic Park
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            El canto de esta ave fue usado para crear el sonido y vocalizaciones
+            de los raptores en la película Jurassic Park
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- IMAGES -->
 
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-4">
-        <div class="grid gap-4">
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Grey_crowned_crane2.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-                <img
-                class="h-auto max-w-full rounded-lg"
-                src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Grey_Crowned_Crane2.jpg"
-                alt=""
-                />
-            </div>
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/2010-kabini-purple-heron.jpg/250px-2010-kabini-purple-heron.jpg"
+            alt=""
+          />
         </div>
-        <div class="grid gap-4">
-            <div>
-                <img
-                class="h-auto max-w-full rounded-lg"
-                src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Grey_Crowned_Crane_2.jpg"
-                alt=""
-                />
-            </div>
-            <div>
-              <img
-                class="h-auto max-w-full rounded-lg"
-                src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Grey-crowned_Crane%2C_Serengeti.jpg"
-                alt=""
-              />
-            </div>
+        <!-- <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Grey_Crowned_Crane2.jpg"
+            alt=""
+          />
+        </div> -->
+      </div>
+      <div class="grid gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Walking_bird_%28209460813%29.jpg/220px-Walking_bird_%28209460813%29.jpg"
+            alt=""
+          />
         </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Purple_Heron_%28Ardea_purpurea%29_in_Kolkata_W_IMG_3352.jpg/220px-Purple_Heron_%28Ardea_purpurea%29_in_Kolkata_W_IMG_3352.jpg"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
     <a href="/" class="flex justify-center mt-4">
       <button
