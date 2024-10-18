@@ -8,6 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        buttons: "#8FBC8F",
         bg_ex: "#000000",
         bg_ew: "#000000",
         bg_cr: "#cd3030",
